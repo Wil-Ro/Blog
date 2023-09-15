@@ -1,0 +1,16 @@
+https://stackoverflow.com/questions/42744315/cmake-with-subdirectories
+very useful^^
+
+
+seems like the paths you're using are wrong,, this is kind of a guess
+but try working out if the directories you include i.e. ../Src are meant
+to be from pc root rather than the projects root
+
+chat gpt says it should be relative since the whole point of cmake is to be
+dynamic and cross platform
+
+IM A FOOL
+I was importing the wrong file
+now we're importing the right file, new error woooo
+
+Ok, weird error with the compiler failing to create a vtable, our abstract class was missing some stuff it needed so it wasnt making the vtable for the super-class of component. This was solved by giving them the inline definition of "= 0". This is C++'s equivalent of an abstract method, see below post https://stackoverflow.com/questions/3065154/undefined-reference-to-vtable
