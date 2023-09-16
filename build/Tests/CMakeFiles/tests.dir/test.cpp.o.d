@@ -194,7 +194,4 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: \
  /usr/local/include/catch2/internal/catch_config_counter.hpp \
  /usr/local/include/catch2/internal/catch_test_registry.hpp \
  /usr/local/include/catch2/interfaces/catch_interfaces_test_invoker.hpp \
- /usr/local/include/catch2/internal/catch_preprocessor_remove_parens.hpp \
- /home/rosia/Programming/Cpp/BlogParser/Tests/BlogParserTest.cpp \
- /home/rosia/Programming/Cpp/BlogParser/Tests/../Src/BlogParser.cpp \
- /home/rosia/Programming/Cpp/BlogParser/Tests/../Src/BlogParser.h
+ /usr/local/include/catch2/internal/catch_preprocessor_remove_parens.hpp
