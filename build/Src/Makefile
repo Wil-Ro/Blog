@@ -130,6 +130,30 @@ blogParser/fast:
 	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/build
 .PHONY : blogParser/fast
 
+BlogParser.o: BlogParser.cpp.o
+.PHONY : BlogParser.o
+
+# target to build an object file
+BlogParser.cpp.o:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/BlogParser.cpp.o
+.PHONY : BlogParser.cpp.o
+
+BlogParser.i: BlogParser.cpp.i
+.PHONY : BlogParser.i
+
+# target to preprocess a source file
+BlogParser.cpp.i:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/BlogParser.cpp.i
+.PHONY : BlogParser.cpp.i
+
+BlogParser.s: BlogParser.cpp.s
+.PHONY : BlogParser.s
+
+# target to generate assembly for a file
+BlogParser.cpp.s:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/BlogParser.cpp.s
+.PHONY : BlogParser.cpp.s
+
 blog.o: blog.cpp.o
 .PHONY : blog.o
 
@@ -163,6 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... blogParser"
+	@echo "... BlogParser.o"
+	@echo "... BlogParser.i"
+	@echo "... BlogParser.s"
 	@echo "... blog.o"
 	@echo "... blog.i"
 	@echo "... blog.s"

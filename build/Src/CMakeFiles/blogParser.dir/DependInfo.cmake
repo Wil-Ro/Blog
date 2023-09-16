@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/rosia/Programming/Cpp/BlogParser/Src/BlogParser.cpp" "Src/CMakeFiles/blogParser.dir/BlogParser.cpp.o" "gcc" "Src/CMakeFiles/blogParser.dir/BlogParser.cpp.o.d"
   "/home/rosia/Programming/Cpp/BlogParser/Src/blog.cpp" "Src/CMakeFiles/blogParser.dir/blog.cpp.o" "gcc" "Src/CMakeFiles/blogParser.dir/blog.cpp.o.d"
   )
 

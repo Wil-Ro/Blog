@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/blogParser.dir/BlogParser.cpp.o"
+  "CMakeFiles/blogParser.dir/BlogParser.cpp.o.d"
   "CMakeFiles/blogParser.dir/blog.cpp.o"
   "CMakeFiles/blogParser.dir/blog.cpp.o.d"
   "blogParser"
