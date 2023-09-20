@@ -117,25 +117,77 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Src/CMakeFiles/blogParser.dir/rule:
-	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/blogParser.dir/rule
-.PHONY : Src/CMakeFiles/blogParser.dir/rule
+Src/CMakeFiles/blog.dir/rule:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/blog.dir/rule
+.PHONY : Src/CMakeFiles/blog.dir/rule
 
 # Convenience name for target.
-blogParser: Src/CMakeFiles/blogParser.dir/rule
-.PHONY : blogParser
+blog: Src/CMakeFiles/blog.dir/rule
+.PHONY : blog
 
 # fast build rule for target.
-blogParser/fast:
-	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/build
-.PHONY : blogParser/fast
+blog/fast:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blog.dir/build.make Src/CMakeFiles/blog.dir/build
+.PHONY : blog/fast
+
+# Convenience name for target.
+Src/CMakeFiles/BlogParser.dir/rule:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/BlogParser.dir/rule
+.PHONY : Src/CMakeFiles/BlogParser.dir/rule
+
+# Convenience name for target.
+BlogParser: Src/CMakeFiles/BlogParser.dir/rule
+.PHONY : BlogParser
+
+# fast build rule for target.
+BlogParser/fast:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogParser.dir/build.make Src/CMakeFiles/BlogParser.dir/build
+.PHONY : BlogParser/fast
+
+# Convenience name for target.
+Src/CMakeFiles/BlogPageBuilder.dir/rule:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Src/CMakeFiles/BlogPageBuilder.dir/rule
+.PHONY : Src/CMakeFiles/BlogPageBuilder.dir/rule
+
+# Convenience name for target.
+BlogPageBuilder: Src/CMakeFiles/BlogPageBuilder.dir/rule
+.PHONY : BlogPageBuilder
+
+# fast build rule for target.
+BlogPageBuilder/fast:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogPageBuilder.dir/build.make Src/CMakeFiles/BlogPageBuilder.dir/build
+.PHONY : BlogPageBuilder/fast
+
+BlogPageBuilder.o: BlogPageBuilder.cpp.o
+.PHONY : BlogPageBuilder.o
+
+# target to build an object file
+BlogPageBuilder.cpp.o:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogPageBuilder.dir/build.make Src/CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o
+.PHONY : BlogPageBuilder.cpp.o
+
+BlogPageBuilder.i: BlogPageBuilder.cpp.i
+.PHONY : BlogPageBuilder.i
+
+# target to preprocess a source file
+BlogPageBuilder.cpp.i:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogPageBuilder.dir/build.make Src/CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.i
+.PHONY : BlogPageBuilder.cpp.i
+
+BlogPageBuilder.s: BlogPageBuilder.cpp.s
+.PHONY : BlogPageBuilder.s
+
+# target to generate assembly for a file
+BlogPageBuilder.cpp.s:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogPageBuilder.dir/build.make Src/CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.s
+.PHONY : BlogPageBuilder.cpp.s
 
 BlogParser.o: BlogParser.cpp.o
 .PHONY : BlogParser.o
 
 # target to build an object file
 BlogParser.cpp.o:
-	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/BlogParser.cpp.o
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogParser.dir/build.make Src/CMakeFiles/BlogParser.dir/BlogParser.cpp.o
 .PHONY : BlogParser.cpp.o
 
 BlogParser.i: BlogParser.cpp.i
@@ -143,7 +195,7 @@ BlogParser.i: BlogParser.cpp.i
 
 # target to preprocess a source file
 BlogParser.cpp.i:
-	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/BlogParser.cpp.i
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogParser.dir/build.make Src/CMakeFiles/BlogParser.dir/BlogParser.cpp.i
 .PHONY : BlogParser.cpp.i
 
 BlogParser.s: BlogParser.cpp.s
@@ -151,7 +203,7 @@ BlogParser.s: BlogParser.cpp.s
 
 # target to generate assembly for a file
 BlogParser.cpp.s:
-	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/BlogParser.cpp.s
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogParser.dir/build.make Src/CMakeFiles/BlogParser.dir/BlogParser.cpp.s
 .PHONY : BlogParser.cpp.s
 
 blog.o: blog.cpp.o
@@ -159,7 +211,7 @@ blog.o: blog.cpp.o
 
 # target to build an object file
 blog.cpp.o:
-	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/blog.cpp.o
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blog.dir/build.make Src/CMakeFiles/blog.dir/blog.cpp.o
 .PHONY : blog.cpp.o
 
 blog.i: blog.cpp.i
@@ -167,7 +219,7 @@ blog.i: blog.cpp.i
 
 # target to preprocess a source file
 blog.cpp.i:
-	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/blog.cpp.i
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blog.dir/build.make Src/CMakeFiles/blog.dir/blog.cpp.i
 .PHONY : blog.cpp.i
 
 blog.s: blog.cpp.s
@@ -175,7 +227,7 @@ blog.s: blog.cpp.s
 
 # target to generate assembly for a file
 blog.cpp.s:
-	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/blog.cpp.s
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blog.dir/build.make Src/CMakeFiles/blog.dir/blog.cpp.s
 .PHONY : blog.cpp.s
 
 # Help Target
@@ -186,7 +238,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... blogParser"
+	@echo "... BlogPageBuilder"
+	@echo "... BlogParser"
+	@echo "... blog"
+	@echo "... BlogPageBuilder.o"
+	@echo "... BlogPageBuilder.i"
+	@echo "... BlogPageBuilder.s"
 	@echo "... BlogParser.o"
 	@echo "... BlogParser.i"
 	@echo "... BlogParser.s"

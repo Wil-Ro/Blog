@@ -92,7 +92,14 @@ tests_EXTERNAL_OBJECTS =
 
 Tests/tests: Tests/CMakeFiles/tests.dir/test.cpp.o
 Tests/tests: Tests/CMakeFiles/tests.dir/build.make
+Tests/tests: Src/libBlogParser.a
+Tests/tests: Src/libBlogPageBuilder.a
+Tests/tests: Src/Libs/libmd4c.a
+Tests/tests: Src/Libs/libmd4c-html.a
 Tests/tests: /usr/local/lib/libCatch2Main.a
+Tests/tests: Src/libBlogParser.a
+Tests/tests: Src/Libs/libmd4c.a
+Tests/tests: Src/Libs/libmd4c-html.a
 Tests/tests: /usr/local/lib/libCatch2.a
 Tests/tests: Tests/CMakeFiles/tests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosia/Programming/Cpp/BlogParser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable tests"

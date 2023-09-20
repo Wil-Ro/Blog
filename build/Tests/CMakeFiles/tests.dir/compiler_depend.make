@@ -233,8 +233,37 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
   /usr/local/include/catch2/internal/catch_config_counter.hpp \
   /usr/local/include/catch2/internal/catch_test_registry.hpp \
   /usr/local/include/catch2/interfaces/catch_interfaces_test_invoker.hpp \
-  /usr/local/include/catch2/internal/catch_preprocessor_remove_parens.hpp
+  /usr/local/include/catch2/internal/catch_preprocessor_remove_parens.hpp \
+  ../Tests/BlogParserTest.cpp \
+  ../Src/BlogParser.h \
+  /usr/include/c++/11/fstream \
+  /usr/include/c++/11/istream \
+  /usr/include/c++/11/bits/istream.tcc \
+  /usr/include/c++/11/bits/codecvt.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+  /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+  /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
+  ../Src/Libs/md4c-html.h \
+  ../Src/Libs/md4c.h \
+  ../Tests/BlogPageBuilderTest.cpp \
+  ../MacroDefinitions.h \
+  ../Src/BlogPageBuilder.h \
+  ../Tests/TestFileReaderUtil.h
 
+
+../Src/BlogPageBuilder.h:
+
+../Tests/BlogPageBuilderTest.cpp:
+
+../Src/Libs/md4c-html.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h:
+
+/usr/include/c++/11/istream:
 
 /usr/local/include/catch2/internal/catch_preprocessor_remove_parens.hpp:
 
@@ -302,6 +331,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 
 /usr/include/c++/11/exception:
 
+../Tests/TestFileReaderUtil.h:
+
 /usr/include/c++/11/ostream:
 
 /usr/local/include/catch2/internal/catch_config_wchar.hpp:
@@ -321,6 +352,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 /usr/include/c++/11/bits/stl_uninitialized.h:
 
 /usr/include/c++/11/vector:
+
+/usr/include/c++/11/bits/fstream.tcc:
 
 /usr/local/include/catch2/catch_tostring.hpp:
 
@@ -418,6 +451,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 
 /usr/include/c++/11/bits/stl_iterator_base_types.h:
 
+../Tests/BlogParserTest.cpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/c++/11/ios:
@@ -438,6 +473,10 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 
 /usr/include/features.h:
 
+../MacroDefinitions.h:
+
+../Src/BlogParser.h:
+
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/c++/11/ext/type_traits.h:
@@ -447,6 +486,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
 
 /usr/include/c++/11/iosfwd:
+
+/usr/include/c++/11/bits/codecvt.h:
 
 /usr/include/c++/11/ctime:
 
@@ -491,6 +532,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/c++/11/sstream:
 
 ../Tests/test.cpp:
 
@@ -538,6 +581,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 
 /usr/include/c++/11/cstddef:
 
+/usr/include/c++/11/bits/sstream.tcc:
+
 /usr/include/strings.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
@@ -547,6 +592,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
+
+/usr/include/c++/11/bits/istream.tcc:
 
 /usr/local/include/catch2/catch_test_macros.hpp:
 
@@ -670,6 +717,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
+../Src/Libs/md4c.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/local/include/catch2/catch_message.hpp:
@@ -687,6 +736,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
+
+/usr/include/c++/11/fstream:
 
 /usr/include/c++/11/bits/cxxabi_forced.h:
 

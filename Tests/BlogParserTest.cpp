@@ -1,16 +1,15 @@
-/*
 #include <catch2/catch_test_macros.hpp>
-#include "../Src/BlogParser.cpp"
+#include "../Src/BlogParser.h"
 
-TEST_CASE("Basic Test")
+TEST_CASE("Parser returns basic text")
 {
     BlogParser* parser = new BlogParser();
-    REQUIRE(parser->ParseText("hello") == "hello");
+    REQUIRE(parser->parse("hello") == "<p>hello</p>\n");
 }
 
-TEST_CASE("Parser returns valid HTML with basic component")
+TEST_CASE("Parser returns valid HTML for headers")
 {
     BlogParser* parser = new BlogParser();
-    REQUIRE(parser->ParseText("#header \n no header") == "<h1>header</h1>no header");
+    REQUIRE(parser->parse("# header\nno header") == "<h1>header</h1>\n<p>no header</p>\n");
 }
-*/
+

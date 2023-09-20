@@ -14,11 +14,11 @@
 class BlogParser
 {
 private:
-    static void saveTextToFile(const MD_CHAR* text, MD_SIZE size, void* unneeded);
+    static void writeTextToString(const MD_CHAR* text, MD_SIZE size, void* unneeded);
     struct UserData{
-        std::string outputFileName;
+        std::string* output;
     };
 
 public:
-    int parse(std::string inputFileName, std::string outputFileName);
+    std::string parse(std::string text);
 };

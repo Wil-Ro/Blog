@@ -53,7 +53,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "Src/CMakeFiles/blogParser.dir/DependInfo.cmake"
+  "Src/CMakeFiles/blog.dir/DependInfo.cmake"
+  "Src/CMakeFiles/BlogParser.dir/DependInfo.cmake"
+  "Src/CMakeFiles/BlogPageBuilder.dir/DependInfo.cmake"
   "Src/Libs/CMakeFiles/md4c.dir/DependInfo.cmake"
   "Src/Libs/CMakeFiles/md4c-html.dir/DependInfo.cmake"
   "Tests/CMakeFiles/tests.dir/DependInfo.cmake"

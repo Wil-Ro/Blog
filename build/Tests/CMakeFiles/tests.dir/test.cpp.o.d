@@ -194,4 +194,18 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: \
  /usr/local/include/catch2/internal/catch_config_counter.hpp \
  /usr/local/include/catch2/internal/catch_test_registry.hpp \
  /usr/local/include/catch2/interfaces/catch_interfaces_test_invoker.hpp \
- /usr/local/include/catch2/internal/catch_preprocessor_remove_parens.hpp
+ /usr/local/include/catch2/internal/catch_preprocessor_remove_parens.hpp \
+ /home/rosia/Programming/Cpp/BlogParser/Tests/BlogParserTest.cpp \
+ /home/rosia/Programming/Cpp/BlogParser/Tests/../Src/BlogParser.h \
+ /usr/include/c++/11/fstream /usr/include/c++/11/istream \
+ /usr/include/c++/11/bits/istream.tcc /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/sstream \
+ /usr/include/c++/11/bits/sstream.tcc \
+ /home/rosia/Programming/Cpp/BlogParser/Tests/../Src/Libs/md4c-html.h \
+ /home/rosia/Programming/Cpp/BlogParser/Tests/../Src/Libs/md4c.h \
+ /home/rosia/Programming/Cpp/BlogParser/Tests/BlogPageBuilderTest.cpp \
+ /home/rosia/Programming/Cpp/BlogParser/Tests/../MacroDefinitions.h \
+ /home/rosia/Programming/Cpp/BlogParser/Tests/../Src/BlogPageBuilder.h \
+ /home/rosia/Programming/Cpp/BlogParser/Tests/TestFileReaderUtil.h

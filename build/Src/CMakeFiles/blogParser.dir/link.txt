@@ -1,1 +1,2 @@
-/usr/bin/c++ -g CMakeFiles/blogParser.dir/blog.cpp.o CMakeFiles/blogParser.dir/BlogParser.cpp.o -o blogParser  Libs/libmd4c.a Libs/libmd4c-html.a 
+/usr/bin/ar qc libblogParser.a CMakeFiles/blogParser.dir/BlogParser.cpp.o
+/usr/bin/ranlib libblogParser.a

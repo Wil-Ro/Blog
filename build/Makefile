@@ -117,17 +117,43 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named blogParser
+# Target rules for targets named blog
 
 # Build rule for target.
-blogParser: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blogParser
-.PHONY : blogParser
+blog: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blog
+.PHONY : blog
 
 # fast build rule for target.
-blogParser/fast:
-	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blogParser.dir/build.make Src/CMakeFiles/blogParser.dir/build
-.PHONY : blogParser/fast
+blog/fast:
+	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/blog.dir/build.make Src/CMakeFiles/blog.dir/build
+.PHONY : blog/fast
+
+#=============================================================================
+# Target rules for targets named BlogParser
+
+# Build rule for target.
+BlogParser: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlogParser
+.PHONY : BlogParser
+
+# fast build rule for target.
+BlogParser/fast:
+	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogParser.dir/build.make Src/CMakeFiles/BlogParser.dir/build
+.PHONY : BlogParser/fast
+
+#=============================================================================
+# Target rules for targets named BlogPageBuilder
+
+# Build rule for target.
+BlogPageBuilder: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BlogPageBuilder
+.PHONY : BlogPageBuilder
+
+# fast build rule for target.
+BlogPageBuilder/fast:
+	$(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogPageBuilder.dir/build.make Src/CMakeFiles/BlogPageBuilder.dir/build
+.PHONY : BlogPageBuilder/fast
 
 #=============================================================================
 # Target rules for targets named md4c
@@ -176,7 +202,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... blogParser"
+	@echo "... BlogPageBuilder"
+	@echo "... BlogParser"
+	@echo "... blog"
 	@echo "... md4c"
 	@echo "... md4c-html"
 	@echo "... tests"

@@ -1,10 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/blogParser.dir/BlogParser.cpp.o"
   "CMakeFiles/blogParser.dir/BlogParser.cpp.o.d"
-  "CMakeFiles/blogParser.dir/blog.cpp.o"
-  "CMakeFiles/blogParser.dir/blog.cpp.o.d"
-  "blogParser"
-  "blogParser.pdb"
+  "libblogParser.a"
+  "libblogParser.pdb"
 )
 
 # Per-language clean rules from dependency scanning.
