@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o"
   "CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o.d"
+  "CMakeFiles/BlogPageBuilder.dir/Page.cpp.o"
+  "CMakeFiles/BlogPageBuilder.dir/Page.cpp.o.d"
   "libBlogPageBuilder.a"
   "libBlogPageBuilder.pdb"
 )

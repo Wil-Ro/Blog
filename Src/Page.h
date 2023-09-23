@@ -25,19 +25,30 @@ public:
 class Page
 {
 private:
-    std::string fileUrl;
-    std::string fileContents;
+    std::string sourceFileUrl;
+    std::string sourceFileContents;
+
+    std::string outFileUrl;
+    std::string outFileContents;
     std::string title;
     FileFlags flags;
     // file date should be added here
 
     void calculatePageFlags();
+    void calculatePageTitle();
     std::string readFile(std::string fileUrl);
+    std::string findAndReplace(std::string text, std::string find, std::string replace);
 
 public:
-    Page(std::string fileUrl);
-    std::string getPageContents();
+    Page(std::string sourceFileUrl, std::string outFolderUrl);
+
+    std::string getSourceFileContents();
+    std::string getOutFileUrl();
     std::string getPageTitle();
     FileFlags getPageFlags();
+
+    void setOutFileContents(std::string contents);
+
+    void writePageToFile();
 
 };

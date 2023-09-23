@@ -67,8 +67,8 @@ CMAKE_BINARY_DIR = /home/rosia/Programming/Cpp/BlogParser/build
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -206,6 +206,30 @@ BlogParser.cpp.s:
 	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogParser.dir/build.make Src/CMakeFiles/BlogParser.dir/BlogParser.cpp.s
 .PHONY : BlogParser.cpp.s
 
+Page.o: Page.cpp.o
+.PHONY : Page.o
+
+# target to build an object file
+Page.cpp.o:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogPageBuilder.dir/build.make Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o
+.PHONY : Page.cpp.o
+
+Page.i: Page.cpp.i
+.PHONY : Page.i
+
+# target to preprocess a source file
+Page.cpp.i:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogPageBuilder.dir/build.make Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.i
+.PHONY : Page.cpp.i
+
+Page.s: Page.cpp.s
+.PHONY : Page.s
+
+# target to generate assembly for a file
+Page.cpp.s:
+	cd /home/rosia/Programming/Cpp/BlogParser/build && $(MAKE) $(MAKESILENT) -f Src/CMakeFiles/BlogPageBuilder.dir/build.make Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.s
+.PHONY : Page.cpp.s
+
 blog.o: blog.cpp.o
 .PHONY : blog.o
 
@@ -247,6 +271,9 @@ help:
 	@echo "... BlogParser.o"
 	@echo "... BlogParser.i"
 	@echo "... BlogParser.s"
+	@echo "... Page.o"
+	@echo "... Page.i"
+	@echo "... Page.s"
 	@echo "... blog.o"
 	@echo "... blog.i"
 	@echo "... blog.s"

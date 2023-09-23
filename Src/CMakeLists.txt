@@ -7,7 +7,7 @@ add_library(BlogParser BlogParser.cpp BlogParser.h)
 target_link_libraries(BlogParser PRIVATE md4c)
 target_link_libraries(BlogParser PRIVATE md4c-html)
 
-add_library(BlogPageBuilder BlogPageBuilder.cpp BlogPageBuilder.h)
+add_library(BlogPageBuilder BlogPageBuilder.cpp BlogPageBuilder.h Page.cpp Page.h)
 target_link_libraries(BlogPageBuilder PRIVATE BlogParser)
 
 target_link_libraries(blog PUBLIC md4c)
@@ -15,4 +15,4 @@ target_link_libraries(blog PUBLIC md4c-html)
 target_link_libraries(blog PRIVATE BlogParser)
 target_link_libraries(blog PRIVATE BlogPageBuilder)
 
-# This probable needs a severe clean up
+# This probably needs a severe clean up

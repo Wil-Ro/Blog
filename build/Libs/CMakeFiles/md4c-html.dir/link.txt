@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmd4c-html.a CMakeFiles/md4c-html.dir/md4c-html.c.o
-/usr/bin/ranlib libmd4c-html.a

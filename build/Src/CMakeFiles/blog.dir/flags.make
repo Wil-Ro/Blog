@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/rosia/Programming/Cpp/BlogParser/Src/Src
 
-CXX_FLAGS = -g
+CXX_FLAGS = -g -std=gnu++17
 

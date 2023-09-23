@@ -9,11 +9,9 @@
 
 int main()
 {
-    BlogPageBuilder* builder = new BlogPageBuilder(RESOURCE_FOLDER "/Templates/BlogPageTemplate.html");
-    std::string result = builder->createPage(TEST_RESOURCE_FOLDER "/TestFullArticle.md");
+    BlogPageBuilder* builder = new BlogPageBuilder(RESOURCE_FOLDER "/Templates/BlogPageTemplate.html",
+                                                   SOURCE_FILE_FOLDER, OUTPUT_FILE_FOLDER);
+    builder->buildAllPages();
 
-    std::ofstream file(RESOURCE_FOLDER "/output.html");
-    file << result;
-    file.close();
 }
 

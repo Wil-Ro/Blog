@@ -1,9 +1,11 @@
 #pragma once
+#include "../MacroDefinitions.h"
 
 #include <string>
 #include <fstream>
 #include <sstream>
 #include <vector>
+#include <filesystem>
 
 #include "BlogParser.h"
 #include "Page.h"
@@ -19,17 +21,26 @@ class BlogPageBuilder
 private:
     std::string pageTemplate;
     std::string articleIdentifier;
+    std::string navIdentifier;
 
-    std::vector<Page> pages;
+    std::vector<Page*> pages;
+    BlogParser* parser;
 
     std::string navSection;
 
     std::string readFile(std::string fileUrl);
-    int calculateArticleIdentifierLocation(std::string text);
+    int calculateIdentifierLocation(std::string id, std::string text);
+    void collectPages();
+
+    std::string generateNavSection();
+    void createPage(Page* page);
 
 public:
-    std::string createPage(std::string mdFileUrl);
-    std::string generateNavSection();
-    BlogPageBuilder(std::string templateFileUrl, std::string articleIdentifier = "<article>");
+
+    BlogPageBuilder(std::string templateFileUrl, std::string inFolder, std::string outFolder,
+                    std::string articleIdentifier = "<article>");
+    ~BlogPageBuilder();
+
+    void buildAllPages();
 
 };

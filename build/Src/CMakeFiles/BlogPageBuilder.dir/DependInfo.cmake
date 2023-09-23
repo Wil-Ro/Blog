@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/rosia/Programming/Cpp/BlogParser/Src/BlogPageBuilder.cpp" "Src/CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o" "gcc" "Src/CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o.d"
+  "/home/rosia/Programming/Cpp/BlogParser/Src/Page.cpp" "Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o" "gcc" "Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o.d"
   )
 
 # Targets to which this target links.

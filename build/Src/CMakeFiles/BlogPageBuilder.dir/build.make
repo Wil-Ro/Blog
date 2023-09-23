@@ -83,17 +83,33 @@ Src/CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.s"
 	cd /home/rosia/Programming/Cpp/BlogParser/build/Src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosia/Programming/Cpp/BlogParser/Src/BlogPageBuilder.cpp -o CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.s
 
+Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: Src/CMakeFiles/BlogPageBuilder.dir/flags.make
+Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp
+Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: Src/CMakeFiles/BlogPageBuilder.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rosia/Programming/Cpp/BlogParser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o"
+	cd /home/rosia/Programming/Cpp/BlogParser/build/Src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o -MF CMakeFiles/BlogPageBuilder.dir/Page.cpp.o.d -o CMakeFiles/BlogPageBuilder.dir/Page.cpp.o -c /home/rosia/Programming/Cpp/BlogParser/Src/Page.cpp
+
+Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BlogPageBuilder.dir/Page.cpp.i"
+	cd /home/rosia/Programming/Cpp/BlogParser/build/Src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rosia/Programming/Cpp/BlogParser/Src/Page.cpp > CMakeFiles/BlogPageBuilder.dir/Page.cpp.i
+
+Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BlogPageBuilder.dir/Page.cpp.s"
+	cd /home/rosia/Programming/Cpp/BlogParser/build/Src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rosia/Programming/Cpp/BlogParser/Src/Page.cpp -o CMakeFiles/BlogPageBuilder.dir/Page.cpp.s
+
 # Object files for target BlogPageBuilder
 BlogPageBuilder_OBJECTS = \
-"CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o"
+"CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o" \
+"CMakeFiles/BlogPageBuilder.dir/Page.cpp.o"
 
 # External object files for target BlogPageBuilder
 BlogPageBuilder_EXTERNAL_OBJECTS =
 
 Src/libBlogPageBuilder.a: Src/CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o
+Src/libBlogPageBuilder.a: Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o
 Src/libBlogPageBuilder.a: Src/CMakeFiles/BlogPageBuilder.dir/build.make
 Src/libBlogPageBuilder.a: Src/CMakeFiles/BlogPageBuilder.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosia/Programming/Cpp/BlogParser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libBlogPageBuilder.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rosia/Programming/Cpp/BlogParser/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libBlogPageBuilder.a"
 	cd /home/rosia/Programming/Cpp/BlogParser/build/Src && $(CMAKE_COMMAND) -P CMakeFiles/BlogPageBuilder.dir/cmake_clean_target.cmake
 	cd /home/rosia/Programming/Cpp/BlogParser/build/Src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BlogPageBuilder.dir/link.txt --verbose=$(VERBOSE)
 

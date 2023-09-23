@@ -1,2 +1,0 @@
-/usr/bin/ar qc libblogPageBuilder.a CMakeFiles/blogPageBuilder.dir/BlogPageBuilder.cpp.o
-/usr/bin/ranlib libblogPageBuilder.a
