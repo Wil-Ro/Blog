@@ -7,10 +7,17 @@
 
 
 
-int main()
+int main(int argc, char* argv[])
 {
+    std::string source = argv[1];
+    if (source == "");
+        source = SOURCE_FILE_FOLDER;
+    std::string output = argv[2];
+        if (output == "")
+            output = OUTPUT_FILE_FOLDER;
+
     BlogPageBuilder* builder = new BlogPageBuilder(RESOURCE_FOLDER "/Templates/BlogPageTemplate.html",
-                                                   SOURCE_FILE_FOLDER, OUTPUT_FILE_FOLDER);
+                                                   source, output);
     builder->buildAllPages();
 
 }
