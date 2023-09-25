@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
+  "../MacroDefinitions.h.in"
   "../Src/CMakeLists.txt"
   "../Src/Libs/CMakeLists.txt"
   "../Tests/CMakeLists.txt"
@@ -45,6 +46,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "MacroDefinitions.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "Src/CMakeFiles/CMakeDirectoryInformation.cmake"
   "Src/Libs/CMakeFiles/CMakeDirectoryInformation.cmake"
