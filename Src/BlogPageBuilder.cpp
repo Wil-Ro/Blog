@@ -71,7 +71,7 @@ std::string BlogPageBuilder::generateNavSection()
         if (page->getPageFlags().hidden)
             continue;
         buffer
-        << "<li><a href=" << page->getOutFileUrl() << ">"
+        << "<li><a href=" << page->getRelativeUrl() << ">"
         << page->getPageTitle()
         << "</a></li>\n";
     }

@@ -30,8 +30,7 @@ Page::Page(std::string sourceFileUrl, std::string outFolderUrl)
     calculatePageFlags();
     calculatePageTitle();
 
-    std::string formattedTitle = findAndReplace(title, " ", "_");
-    this->outFileUrl = outFolderUrl + "/" + formattedTitle + ".html";
+    this->outFileUrl = outFolderUrl + getRelativeUrl();
 }
 
 std::string Page::getSourceFileContents()
@@ -42,6 +41,12 @@ std::string Page::getSourceFileContents()
 std::string Page::getOutFileUrl()
 {
     return outFileUrl;
+}
+
+std::string Page::getRelativeUrl()
+{
+    std::string formattedTitle = findAndReplace(title, " ", "_");
+    return "/" + formattedTitle + ".html";
 }
 
 FileFlags Page::getPageFlags()

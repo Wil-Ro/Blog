@@ -44,6 +44,7 @@ public:
 
     std::string getSourceFileContents();
     std::string getOutFileUrl();
+    std::string getRelativeUrl();
     std::string getPageTitle();
     FileFlags getPageFlags();
 
