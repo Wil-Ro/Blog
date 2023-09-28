@@ -55,4 +55,4 @@ int main(int argc, char* argv[])
 
 // TODO: get images and resources moved across to output to
 // TODO: nav sections :eww:
-
+// TODO: copy static pages over
