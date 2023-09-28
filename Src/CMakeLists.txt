@@ -15,4 +15,7 @@ target_link_libraries(blog PUBLIC md4c-html)
 target_link_libraries(blog PRIVATE BlogParser)
 target_link_libraries(blog PRIVATE BlogPageBuilder)
 
+target_include_directories(blog PUBLIC "${PROJECT_BINARY_DIR}")
+target_include_directories(BlogPageBuilder PUBLIC "${PROJECT_BINARY_DIR}")
+target_include_directories(BlogParser PUBLIC "${PROJECT_BINARY_DIR}")
 # This probably needs a severe clean up

@@ -4,6 +4,8 @@
 BlogPageBuilder::BlogPageBuilder(std::string templateFileUrl, std::string inFolder,
                                  std::string outFolder, std::string articleIdentifier)
 {
+    this->outFolder = outFolder;
+    this->inFolder = inFolder;
     pageTemplate = readFile(templateFileUrl);
     this->articleIdentifier = articleIdentifier;
     navIdentifier = "<nav>";
@@ -53,10 +55,10 @@ int BlogPageBuilder::calculateIdentifierLocation(std::string id, std::string tex
 
 void BlogPageBuilder::collectPages()
 {
-    auto directoryIterator = std::filesystem::directory_iterator(SOURCE_FILE_FOLDER);
+    auto directoryIterator = std::filesystem::directory_iterator(inFolder);
     for(auto file : directoryIterator)
     {
-        pages.push_back(new Page(file.path(), OUTPUT_FILE_FOLDER));
+        pages.push_back(new Page(file.path(), outFolder));
     }
 }
 

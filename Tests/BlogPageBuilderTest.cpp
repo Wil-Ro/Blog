@@ -1,4 +1,4 @@
-#include "../MacroDefinitions.h"
+#include "MacroDefinitions.h"
 
 #include <catch2/catch_test_macros.hpp>
 

@@ -248,7 +248,7 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
   ../Src/Libs/md4c-html.h \
   ../Src/Libs/md4c.h \
   ../Tests/BlogPageBuilderTest.cpp \
-  ../MacroDefinitions.h \
+  MacroDefinitions.h \
   ../Src/BlogPageBuilder.h \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
@@ -322,6 +322,8 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 
 /usr/include/c++/11/bits/stl_construct.h:
 
+/usr/include/c++/11/bits/cxxabi_forced.h:
+
 /usr/include/c++/11/fstream:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos64_t.h:
@@ -390,10 +392,6 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
-/usr/include/c++/11/bits/hash_bytes.h:
-
-/usr/include/c++/11/bits/move.h:
-
 /usr/local/include/catch2/interfaces/catch_interfaces_enum_values_registry.hpp:
 
 /usr/include/c++/11/ext/alloc_traits.h:
@@ -437,6 +435,12 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
+
+/usr/include/c++/11/bits/hash_bytes.h:
+
+/usr/include/c++/11/bits/move.h:
+
+MacroDefinitions.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
@@ -523,10 +527,6 @@ Tests/CMakeFiles/tests.dir/test.cpp.o: ../Tests/test.cpp \
 /usr/include/c++/11/ext/numeric_traits.h:
 
 ../Src/BlogParser.h:
-
-/usr/include/c++/11/bits/cxxabi_forced.h:
-
-../MacroDefinitions.h:
 
 /usr/include/features.h:
 

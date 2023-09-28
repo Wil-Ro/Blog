@@ -2,7 +2,6 @@ Src/CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o: \
  /home/rosia/Programming/Cpp/BlogParser/Src/BlogPageBuilder.cpp \
  /usr/include/stdc-predef.h \
  /home/rosia/Programming/Cpp/BlogParser/Src/BlogPageBuilder.h \
- /home/rosia/Programming/Cpp/BlogParser/Src/../MacroDefinitions.h \
  /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \

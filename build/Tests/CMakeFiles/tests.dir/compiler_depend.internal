@@ -249,7 +249,7 @@ Tests/CMakeFiles/tests.dir/test.cpp.o
  /home/rosia/Programming/Cpp/BlogParser/Src/Libs/md4c-html.h
  /home/rosia/Programming/Cpp/BlogParser/Src/Libs/md4c.h
  /home/rosia/Programming/Cpp/BlogParser/Tests/BlogPageBuilderTest.cpp
- /home/rosia/Programming/Cpp/BlogParser/MacroDefinitions.h
+ /home/rosia/Programming/Cpp/BlogParser/build/MacroDefinitions.h
  /home/rosia/Programming/Cpp/BlogParser/Src/BlogPageBuilder.h
  /usr/include/c++/11/filesystem
  /usr/include/c++/11/bits/fs_fwd.h

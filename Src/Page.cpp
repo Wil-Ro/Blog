@@ -91,7 +91,7 @@ void Page::writePageToFile()
     file.close();
 
     if (file.fail())
-        printf("failed to write file");
+        printf("failed to write file to %s \n", outFileUrl.c_str());
 }
 
 

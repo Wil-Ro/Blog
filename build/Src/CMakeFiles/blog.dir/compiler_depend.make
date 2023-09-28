@@ -3,7 +3,7 @@
 
 Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
   /usr/include/stdc-predef.h \
-  ../MacroDefinitions.h \
+  MacroDefinitions.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -186,6 +186,9 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
   /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
   /usr/include/c++/11/bits/fstream.tcc \
+  /usr/include/c++/11/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h \
   ../Src/BlogPageBuilder.h \
   /usr/include/c++/11/sstream \
   /usr/include/c++/11/bits/sstream.tcc \
@@ -261,8 +264,6 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 
 /usr/include/c++/11/limits:
 
-/usr/include/c++/11/ratio:
-
 /usr/include/c++/11/bits/fs_fwd.h:
 
 /usr/include/c++/11/filesystem:
@@ -278,6 +279,12 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 /usr/include/c++/11/sstream:
 
 ../Src/BlogPageBuilder.h:
+
+/usr/include/string.h:
+
+/usr/include/c++/11/ratio:
+
+/usr/include/c++/11/cstring:
 
 /usr/include/c++/11/bits/fstream.tcc:
 
@@ -381,6 +388,12 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
+../Src/blog.cpp:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
 /usr/include/c++/11/bits/cxxabi_init_exception.h:
@@ -401,10 +414,6 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 
 /usr/include/c++/11/bits/stl_iterator.h:
 
-/usr/include/c++/11/bits/concept_check.h:
-
-/usr/include/stdint.h:
-
 /usr/include/c++/11/cstdint:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
@@ -415,8 +424,6 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 
 /usr/include/ctype.h:
 
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
 /usr/include/x86_64-linux-gnu/sys/cdefs.h:
@@ -424,6 +431,10 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/stdint.h:
+
+/usr/include/c++/11/bits/concept_check.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stdarg.h:
 
@@ -487,19 +498,25 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-../Src/blog.cpp:
-
-/usr/include/c++/11/ext/type_traits.h:
+MacroDefinitions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/11/string:
 
 /usr/include/x86_64-linux-gnu/bits/types/time_t.h:
+
+../Src/BlogParser.h:
+
+/usr/include/c++/11/ext/numeric_traits.h:
+
+/usr/include/features.h:
+
+/usr/include/stdc-predef.h:
+
+/usr/include/c++/11/bits/stl_function.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
@@ -510,14 +527,6 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 /usr/include/c++/11/bits/stringfwd.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
-
-/usr/include/features.h:
-
-../Src/BlogParser.h:
-
-../MacroDefinitions.h:
-
-/usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/asm-generic/errno-base.h:
 
@@ -530,6 +539,8 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/c++/11/ctime:
 
@@ -578,10 +589,6 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 /usr/include/x86_64-linux-gnu/c++/11/bits/atomic_word.h:
 
 /usr/include/c++/11/string_view:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/c++/11/bits/stl_function.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -666,6 +673,8 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 /usr/include/c++/11/cstdlib:
 
 /usr/include/c++/11/bits/sstream.tcc:
+
+/usr/include/strings.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 

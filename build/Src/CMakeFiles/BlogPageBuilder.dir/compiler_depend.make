@@ -4,7 +4,6 @@
 Src/CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o: ../Src/BlogPageBuilder.cpp \
   /usr/include/stdc-predef.h \
   ../Src/BlogPageBuilder.h \
-  ../MacroDefinitions.h \
   /usr/include/c++/11/string \
   /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -557,9 +556,7 @@ Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/byteswap.h:
 
-/usr/include/c++/11/ext/aligned_buffer.h:
-
-/usr/include/endian.h:
+/usr/include/c++/11/cctype:
 
 /usr/include/x86_64-linux-gnu/bits/typesizes.h:
 
@@ -568,6 +565,10 @@ Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
 
@@ -604,12 +605,6 @@ Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp \
 /usr/include/c++/11/bits/stl_iterator_base_funcs.h:
 
 /usr/include/ctype.h:
-
-/usr/include/c++/11/ios:
-
-/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -655,27 +650,9 @@ Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
-/usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
-
-/usr/include/c++/11/ext/type_traits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/c++/11/bits/exception.h:
-
-/usr/include/c++/11/bits/range_access.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
-
-/usr/include/c++/11/bits/ostream_insert.h:
+/usr/include/x86_64-linux-gnu/bits/types.h:
 
 ../Src/BlogPageBuilder.h:
 
@@ -695,6 +672,28 @@ Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp \
 
 /usr/include/c++/11/bits/alloc_traits.h:
 
+/usr/include/c++/11/ios:
+
+/usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/c++/11/bits/exception.h:
+
+/usr/include/c++/11/bits/range_access.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h:
+
+/usr/include/c++/11/bits/ostream_insert.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/c++/11/string:
@@ -709,8 +708,6 @@ Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp \
 
 ../Src/BlogParser.h:
 
-../MacroDefinitions.h:
-
 /usr/include/c++/11/ext/numeric_traits.h:
 
 /usr/include/asm-generic/errno-base.h:
@@ -724,6 +721,8 @@ Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp \
 /usr/include/x86_64-linux-gnu/sys/single_threaded.h:
 
 /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h:
+
+/usr/include/c++/11/ext/type_traits.h:
 
 /usr/include/c++/11/ctime:
 
@@ -770,12 +769,6 @@ Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp \
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/11/bits/stl_function.h:
-
-/usr/include/x86_64-linux-gnu/bits/types.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
-
-/usr/include/c++/11/cctype:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -836,6 +829,10 @@ Src/CMakeFiles/BlogPageBuilder.dir/Page.cpp.o: ../Src/Page.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
+
+/usr/include/c++/11/ext/aligned_buffer.h:
+
+/usr/include/endian.h:
 
 /usr/include/c++/11/bits/allocated_ptr.h:
 

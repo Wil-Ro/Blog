@@ -1,5 +1,4 @@
 #pragma once
-#include "../MacroDefinitions.h"
 
 #include <string>
 #include <fstream>
@@ -19,6 +18,9 @@
 class BlogPageBuilder
 {
 private:
+    std::string outFolder;
+    std::string inFolder;
+
     std::string pageTemplate;
     std::string articleIdentifier;
     std::string navIdentifier;
