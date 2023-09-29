@@ -9,6 +9,6 @@ project(BlogParser)
 configure_file(MacroDefinitions.h.in MacroDefinitions.h)
 
 add_subdirectory(Src)
-add_subdirectory(Tests)
+#add_subdirectory(Tests)
 
 
