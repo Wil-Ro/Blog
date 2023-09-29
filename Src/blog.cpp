@@ -37,7 +37,9 @@ std::string getArg(int argc, char* argv[], std::string argIdString)
 
 void copyFolderAndContents(std::string inUrl, std::string outUrl)
 {
-    std::filesystem::copy(inUrl, outUrl, std::filesystem::copy_options::recursive);
+    std::filesystem::copy_options opts = std::filesystem::copy_options::update_existing |
+    std::filesystem::copy_options::recursive;
+    std::filesystem::copy(inUrl, outUrl, opts);
 }
 
 /*
@@ -65,3 +67,4 @@ int main(int argc, char* argv[])
 // TODO: get images and resources moved across to output
 // TODO: nav sections :eww:
 // TODO: copy static pages over
+// TODO: code doesnt copy moomin
