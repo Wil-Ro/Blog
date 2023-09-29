@@ -6,3 +6,5 @@
 #define SOURCE_FILE_FOLDER "/home/rosia/Programming/Cpp/BlogParser/Resources/Input"
 #define OUTPUT_FILE_FOLDER "/home/rosia/Programming/Cpp/BlogParser/Resources/Output"
 
+#define STATIC_RESOURCES_FOLDER "/home/rosia/Programming/Cpp/BlogParser/Resources/Static"
+

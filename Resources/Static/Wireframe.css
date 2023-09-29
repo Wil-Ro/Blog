@@ -1,0 +1,58 @@
+h1{
+    color: black;
+}
+
+header{
+    font-size: 3rem;
+    margin-bottom: 2%;
+}
+
+main{
+    display: flex;
+}
+
+nav{
+    margin-right: 5%;
+    width: 10%;
+}
+
+nav a{
+    text-decoration: underline;
+    color: black;
+}
+nav a:visited{
+    color: black;
+}
+
+nav a:hover{
+    font-weight: 600;
+}
+
+nav h1{
+    font-size: 1rem;
+}
+
+nav h2{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+article{
+    width: 40rem;
+}
+
+ul{
+    list-style-type: "- ";
+}
+
+pre
+{
+    background-color: lightgray;
+    padding: 3px;
+    overflow: auto;
+}
+
+img{
+    width: 50%;
+    margin-top: 10px;
+}

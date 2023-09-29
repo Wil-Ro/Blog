@@ -6,3 +6,5 @@
 #define SOURCE_FILE_FOLDER "${CMAKE_SOURCE_DIR}/Resources/Input"
 #define OUTPUT_FILE_FOLDER "${CMAKE_SOURCE_DIR}/Resources/Output"
 
+#define STATIC_RESOURCES_FOLDER "${CMAKE_SOURCE_DIR}/Resources/Static"
+

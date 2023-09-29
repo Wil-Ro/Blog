@@ -3,6 +3,7 @@
 #include <string>
 #include <fstream>
 #include <cstring>
+#include <filesystem>
 
 #include "BlogPageBuilder.h"
 
@@ -34,6 +35,11 @@ std::string getArg(int argc, char* argv[], std::string argIdString)
     return "";
 }
 
+void copyFolderAndContents(std::string inUrl, std::string outUrl)
+{
+    std::filesystem::copy(inUrl, outUrl, std::filesystem::copy_options::recursive);
+}
+
 /*
  * -in=""  // give source folder
  * -out="" // give output folder
@@ -47,12 +53,15 @@ int main(int argc, char* argv[])
         if (output == "")
             output = OUTPUT_FILE_FOLDER;
 
-    BlogPageBuilder* builder = new BlogPageBuilder(RESOURCE_FOLDER "/Templates/BlogPageTemplate.html",
-                                                   source, output);
+    // generated pages
+    BlogPageBuilder* builder = new BlogPageBuilder(RESOURCE_FOLDER "/Templates/BlogPageTemplate.html", source, output);
     builder->buildAllPages();
+
+    // pre-written pages and resources i.e. images
+    copyFolderAndContents(STATIC_RESOURCES_FOLDER, output);
 
 }
 
-// TODO: get images and resources moved across to output to
+// TODO: get images and resources moved across to output
 // TODO: nav sections :eww:
 // TODO: copy static pages over
