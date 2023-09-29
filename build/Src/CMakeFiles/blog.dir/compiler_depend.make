@@ -189,14 +189,6 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
   /usr/include/c++/11/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  ../Src/BlogPageBuilder.h \
-  /usr/include/c++/11/sstream \
-  /usr/include/c++/11/bits/sstream.tcc \
-  /usr/include/c++/11/vector \
-  /usr/include/c++/11/bits/stl_uninitialized.h \
-  /usr/include/c++/11/bits/stl_vector.h \
-  /usr/include/c++/11/bits/stl_bvector.h \
-  /usr/include/c++/11/bits/vector.tcc \
   /usr/include/c++/11/filesystem \
   /usr/include/c++/11/bits/fs_fwd.h \
   /usr/include/c++/11/chrono \
@@ -221,6 +213,8 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
   /usr/include/c++/11/bits/invoke.h \
   /usr/include/c++/11/iomanip \
   /usr/include/c++/11/bits/quoted_string.h \
+  /usr/include/c++/11/sstream \
+  /usr/include/c++/11/bits/sstream.tcc \
   /usr/include/c++/11/codecvt \
   /usr/include/c++/11/ext/concurrence.h \
   /usr/include/c++/11/bits/shared_ptr.h \
@@ -230,6 +224,12 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
   /usr/include/c++/11/ext/aligned_buffer.h \
   /usr/include/c++/11/bits/fs_dir.h \
   /usr/include/c++/11/bits/fs_ops.h \
+  ../Src/BlogPageBuilder.h \
+  /usr/include/c++/11/vector \
+  /usr/include/c++/11/bits/stl_uninitialized.h \
+  /usr/include/c++/11/bits/stl_vector.h \
+  /usr/include/c++/11/bits/stl_bvector.h \
+  /usr/include/c++/11/bits/vector.tcc \
   ../Src/BlogParser.h \
   ../Src/Libs/md4c-html.h \
   ../Src/Libs/md4c.h \
@@ -240,9 +240,21 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 
 ../Src/Libs/md4c-html.h:
 
+/usr/include/c++/11/bits/vector.tcc:
+
+/usr/include/c++/11/bits/stl_bvector.h:
+
+/usr/include/c++/11/bits/stl_uninitialized.h:
+
+/usr/include/c++/11/vector:
+
+../Src/BlogPageBuilder.h:
+
 /usr/include/c++/11/bits/fs_ops.h:
 
 /usr/include/c++/11/bits/refwrap.h:
+
+/usr/include/c++/11/sstream:
 
 /usr/include/c++/11/bits/quoted_string.h:
 
@@ -267,18 +279,6 @@ Src/CMakeFiles/blog.dir/blog.cpp.o: ../Src/blog.cpp \
 /usr/include/c++/11/bits/fs_fwd.h:
 
 /usr/include/c++/11/filesystem:
-
-/usr/include/c++/11/bits/vector.tcc:
-
-/usr/include/c++/11/bits/stl_bvector.h:
-
-/usr/include/c++/11/bits/stl_uninitialized.h:
-
-/usr/include/c++/11/vector:
-
-/usr/include/c++/11/sstream:
-
-../Src/BlogPageBuilder.h:
 
 /usr/include/string.h:
 
