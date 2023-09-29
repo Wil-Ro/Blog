@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/tests.dir/test.cpp.o -o tests  ../Src/libBlogParser.a ../Src/libBlogPageBuilder.a ../Src/Libs/libmd4c.a ../Src/Libs/libmd4c-html.a /usr/local/lib/libCatch2Main.a ../Src/libBlogParser.a ../Src/Libs/libmd4c.a ../Src/Libs/libmd4c-html.a /usr/local/lib/libCatch2.a 

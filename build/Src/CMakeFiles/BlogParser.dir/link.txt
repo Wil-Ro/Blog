@@ -1,2 +1,0 @@
-/usr/bin/ar qc libBlogParser.a CMakeFiles/BlogParser.dir/BlogParser.cpp.o
-/usr/bin/ranlib libBlogParser.a

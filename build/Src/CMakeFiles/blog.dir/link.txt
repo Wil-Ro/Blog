@@ -1,1 +1,0 @@
-/usr/bin/c++ -g CMakeFiles/blog.dir/blog.cpp.o -o blog  Libs/libmd4c.a Libs/libmd4c-html.a libBlogParser.a libBlogPageBuilder.a libBlogParser.a Libs/libmd4c.a Libs/libmd4c-html.a 

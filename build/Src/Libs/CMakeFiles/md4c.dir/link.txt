@@ -1,2 +1,0 @@
-/usr/bin/ar qc libmd4c.a CMakeFiles/md4c.dir/md4c.c.o
-/usr/bin/ranlib libmd4c.a
