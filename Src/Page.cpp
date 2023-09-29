@@ -4,6 +4,8 @@
 void Page::calculatePageFlags()
 {
     int endOfFirstLine = sourceFileContents.find_first_of("\n");
+    if (endOfFirstLine == -1)
+        throw sourceFileUrl + " is empty or all on one line";
     std::string tagLine = sourceFileContents.substr(0, endOfFirstLine);
     sourceFileContents = sourceFileContents.substr(endOfFirstLine, sourceFileContents.length()-endOfFirstLine);
 
