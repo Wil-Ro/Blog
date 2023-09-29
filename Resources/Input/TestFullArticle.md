@@ -21,4 +21,4 @@ int main()
 moomin
 
 
-![moomin](file:///home/rosia/Pictures/Moomins/moomin-meadow.png)
+![moomin](moomin.png)
