@@ -1,0 +1,10 @@
+a{
+    text-decoration: underline;
+    color: black;
+}
+a:visted{
+    color: black
+}
+a:hover{
+    font-weight: 600;
+}

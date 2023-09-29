@@ -79,4 +79,3 @@ int main(int argc, char* argv[])
 }
 
 // TODO: nav sections :eww:
-// TODO: custom file names with tag on md pages
