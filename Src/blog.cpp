@@ -23,7 +23,7 @@ std::string findAndReplace(std::string text, std::string find, std::string repla
     return text;
 }
 
-std::string getArg(int argc, char* argv[], std::string argIdString)
+std::string getArgValue(int argc, char* argv[], std::string argIdString)
 {
     for (int i = 0; i < argc; i++)
     {
@@ -33,6 +33,16 @@ std::string getArg(int argc, char* argv[], std::string argIdString)
             return std::string(argv[i]).substr(idValSplit+1, strlen(argv[i])-(idValSplit+1));
     }
     return "";
+}
+
+bool doesArgExist(int argc, char* argv[], std::string argIdString)
+{
+    for (int i = 0; i < argc; i++)
+    {
+        if(strcmp(argv[i], argIdString.c_str()) == 0)
+            return true;
+    }
+    return false;
 }
 
 void copyFolderAndContents(std::string inUrl, std::string outUrl)
@@ -45,18 +55,22 @@ void copyFolderAndContents(std::string inUrl, std::string outUrl)
 /*
  * -in=""  // give source folder
  * -out="" // give output folder
+ * -hide // hides private posts
  */
 int main(int argc, char* argv[])
 {
-    std::string source = getArg(argc, argv, "-in=");
+    std::string source = getArgValue(argc, argv, "-in=");
     if (source == "")
         source = SOURCE_FILE_FOLDER;
-    std::string output = getArg(argc, argv, "-out=");
+    std::string output = getArgValue(argc, argv, "-out=");
         if (output == "")
             output = OUTPUT_FILE_FOLDER;
+    int flags = BlogPageBuilder::OptionFlags::NONE;
+    if (doesArgExist(argc, argv, "-hide"))
+        flags |= BlogPageBuilder::OptionFlags::HIDE_PRIVATE;
 
     // generated pages
-    BlogPageBuilder* builder = new BlogPageBuilder(RESOURCE_FOLDER "/Templates/BlogPageTemplate.html", source, output);
+    BlogPageBuilder* builder = new BlogPageBuilder(RESOURCE_FOLDER "/Templates/BlogPageTemplate.html", source, output, flags);
     builder->buildAllPages();
 
     // pre-written pages and resources i.e. images
@@ -64,7 +78,5 @@ int main(int argc, char* argv[])
 
 }
 
-// TODO: get images and resources moved across to output
 // TODO: nav sections :eww:
-// TODO: copy static pages over
-// TODO: code doesnt copy moomin
+// TODO: custom file names with tag on md pages

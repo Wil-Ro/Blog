@@ -45,8 +45,10 @@ std::string Page::getOutFileUrl()
 
 std::string Page::getRelativeUrl()
 {
-    std::string formattedTitle = findAndReplace(title, " ", "_");
-    return "/" + formattedTitle + ".html";
+    int start = sourceFileUrl.find_last_of("/");
+    std::string relativeUrl = std::string(sourceFileUrl).substr(start, sourceFileUrl.length()-start);
+    relativeUrl.replace(relativeUrl.length()-3, 3, ".html");
+    return relativeUrl;
 }
 
 FileFlags Page::getPageFlags()

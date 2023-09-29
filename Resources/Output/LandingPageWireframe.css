@@ -10,14 +10,3 @@ main{
 section{
     margin-top: 3rem;
 }
-
-.test{
-    margin: 10 0 10 0;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-}
-
-.test a{
-    text-dectration: underline;
-}

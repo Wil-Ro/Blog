@@ -11,13 +11,21 @@
 
 /*
  * Class that builds blog pages, takes a template page to put the blog-post in
- * along with an optional artifleIdentifier. The template is searched for this
+ * along with an optional articleIdentifier. The template is searched for this
  * and the blog is placed after it.
  */
 
 class BlogPageBuilder
 {
+public:
+    enum OptionFlags
+    {
+        NONE = 0X0,
+        HIDE_PRIVATE = 0x1
+    };
 private:
+    int options;
+
     std::string outFolder;
     std::string inFolder;
 
@@ -36,11 +44,12 @@ private:
 
     std::string generateNavSection();
     void createPage(Page* page);
+    bool isOptionEnabled(int flag);
 
 public:
 
     BlogPageBuilder(std::string templateFileUrl, std::string inFolder, std::string outFolder,
-                    std::string articleIdentifier = "<article>");
+                    int flags, std::string articleIdentifier = "<article>");
     ~BlogPageBuilder();
 
     void buildAllPages();

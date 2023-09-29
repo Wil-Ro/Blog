@@ -16,18 +16,6 @@ nav{
     width: 10%;
 }
 
-nav a{
-    text-decoration: underline;
-    color: black;
-}
-nav a:visited{
-    color: black;
-}
-
-nav a:hover{
-    font-weight: 600;
-}
-
 nav h1{
     font-size: 1rem;
 }

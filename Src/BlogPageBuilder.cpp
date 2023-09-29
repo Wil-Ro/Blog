@@ -2,8 +2,9 @@
 
 
 BlogPageBuilder::BlogPageBuilder(std::string templateFileUrl, std::string inFolder,
-                                 std::string outFolder, std::string articleIdentifier)
+                                 std::string outFolder, int flags, std::string articleIdentifier)
 {
+    options = flags;
     this->outFolder = outFolder;
     this->inFolder = inFolder;
     pageTemplate = readFile(templateFileUrl);
@@ -68,7 +69,8 @@ std::string BlogPageBuilder::generateNavSection()
     buffer << "\n<h1>Navigation</h1>\n\n";
     for (Page* page : pages)
     {
-        if (page->getPageFlags().hidden)
+        if (page->getPageFlags().hidden &&
+            isOptionEnabled(OptionFlags::HIDE_PRIVATE))
             continue;
         buffer
         << "<li><a href=" << page->getRelativeUrl() << ">"
@@ -85,4 +87,9 @@ std::string BlogPageBuilder::readFile(std::string fileUrl)
     fileCache << file.rdbuf();
 
     return fileCache.str();
+}
+
+bool BlogPageBuilder::isOptionEnabled(int flag)
+{
+    return (options & flag) == flag;
 }
