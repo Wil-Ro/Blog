@@ -1,7 +1,7 @@
 
 # This Site
 
-This site is a small project I worked on over the course of a few weeks while first returning back to university during my second year. Its hosted on a small (lighttpd)[] server running on an old laptop from around 2003. I wrote a small C++ program that takes in MarkDown files and builds them into webpages. Everytime the server turns on it pulls from a repo, builds the code and runs it, this then builds the website and puts them in a folder for lighttpd to host.
+This site is a small project I worked on over the course of a few weeks while first returning back to university during my second year. Its hosted on a small [lighttpd](https://www.lighttpd.net/) server running on an old laptop from around 2003. I wrote a small C++ program that takes in MarkDown files and builds them into webpages. Everytime the server turns on it pulls from a repo, builds the code and runs it, this then builds the website and puts them in a folder for lighttpd to host.
 
 ## The thoughts behind this
 
