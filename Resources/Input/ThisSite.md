@@ -35,3 +35,7 @@ I decided to go for this very quickly as it seemed built specifically for the id
 
 ## Alpine Linux
 Alpine Linux was my first non-ubuntu linux experience. I really enjoyed learning about it and found its documentation really helpful and detailed with almost everything I needed. The OS itself was really simple and friendly too which was very nice. I did find I was very suprised by what was and wasnt included as I slowly learnt what came from debian and what didnt. Alpine didnt have sudo, any sort of file transfer systems or any of bash's basic features and learning that these didnt exist then seeing the base programs they were built out of was really interesting (for example sudo seems like its just a complex wrapper for su, a command that switches users).
+
+Alpine essentially, from a users perspective, is made of busybox (a very basic shell that I also found runs within ubuntu after a kernel panic) and openrc which just controls how background services run. These two programs did everything I needed with openrc managing lighttpd and busybox letting me interact with the os and running a startup script for me to pull from github and rebuild/run the C++ code.
+
+
