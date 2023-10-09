@@ -3,6 +3,10 @@
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <cstring>
+#include <vector>
+
+#include "MacroDefinitions.h"
 
 
 struct FileFlags
@@ -43,8 +47,13 @@ public:
     Page(std::string sourceFileUrl, std::string outFolderUrl);
 
     std::string getSourceFileContents();
-    std::string getOutFileUrl();
-    std::string getRelativeUrl();
+
+    std::string getInUrl();
+    std::string getRelativeInUrl();
+
+    std::string getOutUrl();
+    std::string getRelativeOutUrl();
+
     std::string getPageTitle();
     FileFlags getPageFlags();
 
@@ -52,4 +61,24 @@ public:
 
     void writePageToFile();
 
+};
+
+/*
+ * Class to represent the structure of the nav menu, the categories of the pages
+ */
+// A node can either be a file or a folder, value for each possibility.
+struct PageTreeNode
+{
+    std::vector<PageTreeNode> branches;
+    Page* pageValue;
+    std::string folderValue;
+};
+
+class PageTree
+{
+private:
+     PageTreeNode* rootNode;
+public:
+    PageTreeNode* getNodeLinear(int x);
+    std::vector<PageTreeNode> getTreeAsList();
 };

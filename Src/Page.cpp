@@ -32,7 +32,7 @@ Page::Page(std::string sourceFileUrl, std::string outFolderUrl)
     calculatePageFlags();
     calculatePageTitle();
 
-    this->outFileUrl = outFolderUrl + getRelativeUrl();
+    this->outFileUrl = outFolderUrl + getRelativeOutUrl();
 }
 
 std::string Page::getSourceFileContents()
@@ -40,14 +40,29 @@ std::string Page::getSourceFileContents()
     return sourceFileContents;
 }
 
-std::string Page::getOutFileUrl()
+std::string Page::getOutUrl()
 {
     return outFileUrl;
 }
 
-std::string Page::getRelativeUrl()
+// includes first /
+std::string Page::getRelativeOutUrl()
 {
     int start = sourceFileUrl.find_last_of("/");
+    std::string relativeUrl = std::string(sourceFileUrl).substr(start, sourceFileUrl.length()-start);
+    relativeUrl.replace(relativeUrl.length()-3, 3, ".html");
+    return relativeUrl;
+}
+
+std::string Page::getInUrl()
+{
+    return sourceFileUrl;
+}
+
+// includes first /
+std::string Page::getRelativeInUrl()
+{
+    int start = strlen(SOURCE_FILE_FOLDER)+1;
     std::string relativeUrl = std::string(sourceFileUrl).substr(start, sourceFileUrl.length()-start);
     relativeUrl.replace(relativeUrl.length()-3, 3, ".html");
     return relativeUrl;

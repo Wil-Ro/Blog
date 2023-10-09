@@ -73,7 +73,7 @@ std::string BlogPageBuilder::generateNavSection()
             isOptionEnabled(OptionFlags::HIDE_PRIVATE))
             continue;
         buffer
-        << "<li><a href=" << page->getRelativeUrl() << ">"
+        << "<li><a href=" << page->getRelativeOutUrl() << ">"
         << page->getPageTitle()
         << "</a></li>\n";
     }
