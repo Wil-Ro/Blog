@@ -62,23 +62,3 @@ public:
     void writePageToFile();
 
 };
-
-/*
- * Class to represent the structure of the nav menu, the categories of the pages
- */
-// A node can either be a file or a folder, value for each possibility.
-struct PageTreeNode
-{
-    std::vector<PageTreeNode> branches;
-    Page* pageValue;
-    std::string folderValue;
-};
-
-class PageTree
-{
-private:
-     PageTreeNode* rootNode;
-public:
-    PageTreeNode* getNodeLinear(int x);
-    std::vector<PageTreeNode> getTreeAsList();
-};

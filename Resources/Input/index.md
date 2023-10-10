@@ -7,15 +7,20 @@ _______
 I'm currently studying at a small university in wales where I'm doing a BEng in software engineering whilst working on robotics and exploring my own interests on the side through various societies and personal projects.
 
 
-![image of me](/profile.jpeg)
+<img src="profile.jpeg" alt="image of me" style="width:50%">
 
 Nowadays my interests lie mostly in low-power computing and electronics, experimenting with how computers can work in a more environmentally friendly manner. I find the environment is something I think about a lot and finding overlaps between it and my interests in computing has lead me to some really intersting communities.
 
 On the side of this I also enjoy using code to create music through programming using [Sonic-Pi](https://sonic-pi.net/) and just creating programs in general with friends and colleagues. Most of my work can either be found in blog-posts here or on my [github](https://github.com/Wil-Ro).
 
 I've previously had interests in VR and XR and UI design, spending a lot of my secondary school years experimenting with both concepts so both websites also have a few probjects relating to those concepts.
+________
+If you want a basic outline of my work, here are a few interesting projects:
+- [something]()
+- [something]()
+- [something]()
 
-To see my work, check the navbox to the side
+To see all of my work, check the navbox to the side.
 
 <-
 

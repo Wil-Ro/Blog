@@ -42,7 +42,14 @@ private:
     int calculateIdentifierLocation(std::string id, std::string text);
     void collectPages();
 
+    // TODO separate these into a separate object
+    std::string navHeader = "\n<h1>Navigation</h1>\n\n";
+
     std::string generateNavSection();
+    std::string generateCategories(std::string rootFolderUrl);
+    std::string insertPagesIntoCategories(std::string categories);
+    std::string findDeepestCategory(std::string url);
+
     void createPage(Page* page);
     bool isOptionEnabled(int flag);
 

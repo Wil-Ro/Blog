@@ -118,10 +118,6 @@ void Page::writePageToFile()
         printf("failed to write file to %s \n", outFileUrl.c_str());
 }
 
-
-
-
-
 FileFlags FlagReader::readFlags(std::string flagString)
 {
     FileFlags flags;
