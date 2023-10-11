@@ -71,25 +71,22 @@ void BlogPageBuilder::collectPages()
 std::string NavBarGenerator::generateCategories(std::string rootFolderUrl)
 {
     std::stringstream buffer;
-
-    std::set<std::string> categories;
+    std::set<std::string> folders;
 
     auto directoryIterator = std::filesystem::directory_iterator(rootFolderUrl);
     for (auto folder : directoryIterator)
     {
         if (folder.is_directory())
         {
-            std::string path = folder.path();
-            std::string folderName = path.substr(path.find_last_of("/")+1, path.length()-path.find_last_of("/"));
-
-            categories.insert(folderName);
+            folders.insert(folder.path());
         }
     }
 
-    for (std::string category : categories)
+    for (std::string folder : folders)
     {
-        buffer << "\n<h2>" << category << "</h2>\n";
-        buffer << generateCategories(rootFolderUrl + "/" + category);
+        std::string categoryName = folder.substr(folder.find_last_of("/")+1, folder.length()-folder.find_last_of("/"));
+        buffer << "\n<h2>" << categoryName << "</h2>\n";
+        buffer << generateCategories(folder);
         buffer << "\n";
     }
     return buffer.str();
