@@ -14,7 +14,10 @@ BlogPageBuilder::BlogPageBuilder(std::string templateFileUrl, std::string inFold
     parser = new BlogParser();
 
     collectPages();
-    navSection = generateNavSection();
+
+    NavBarGenerator* navGen = new NavBarGenerator();
+    navSection = navGen->generateNavSection(pages, options);
+    delete navGen;
 }
 
 BlogPageBuilder::~BlogPageBuilder()
@@ -65,9 +68,12 @@ void BlogPageBuilder::collectPages()
     }
 }
 
-std::string BlogPageBuilder::generateCategories(std::string rootFolderUrl)
+std::string NavBarGenerator::generateCategories(std::string rootFolderUrl)
 {
     std::stringstream buffer;
+
+    std::set<std::string> categories;
+
     auto directoryIterator = std::filesystem::directory_iterator(rootFolderUrl);
     for (auto folder : directoryIterator)
     {
@@ -76,16 +82,20 @@ std::string BlogPageBuilder::generateCategories(std::string rootFolderUrl)
             std::string path = folder.path();
             std::string folderName = path.substr(path.find_last_of("/")+1, path.length()-path.find_last_of("/"));
 
-            buffer << "\n<h2>" << folderName << "</h2>\n";
-            buffer << generateCategories(folder.path());
-            buffer << "\n";
-
+            categories.insert(folderName);
         }
+    }
+
+    for (std::string category : categories)
+    {
+        buffer << "\n<h2>" << category << "</h2>\n";
+        buffer << generateCategories(rootFolderUrl + "/" + category);
+        buffer << "\n";
     }
     return buffer.str();
 }
 
-std::string BlogPageBuilder::findDeepestCategory(std::string url)
+std::string NavBarGenerator::findDeepestCategory(std::string url)
 {
     int categoryEnd = url.rfind("/");
     int categoryStart = url.rfind("/", categoryEnd-1);
@@ -94,7 +104,7 @@ std::string BlogPageBuilder::findDeepestCategory(std::string url)
     return url.substr(categoryStart, categoryEnd);
 }
 
-std::string BlogPageBuilder::insertPagesIntoCategories(std::string categories)
+std::string NavBarGenerator::insertPagesIntoCategories(std::string categories, std::vector<Page*> pages)
 {
     for (Page* page : pages)
     {
@@ -122,12 +132,13 @@ std::string BlogPageBuilder::insertPagesIntoCategories(std::string categories)
     return categories;
 }
 
-std::string BlogPageBuilder::generateNavSection()
+std::string NavBarGenerator::generateNavSection(std::vector<Page*> pages, int options)
 {
+    this->options = options;
     std::string buffer;
     buffer.append(navHeader);
     buffer.append(generateCategories(SOURCE_FILE_FOLDER));
-    buffer = insertPagesIntoCategories(buffer);
+    buffer = insertPagesIntoCategories(buffer, pages);
     return buffer;
 }
 
@@ -141,6 +152,11 @@ std::string BlogPageBuilder::readFile(std::string fileUrl)
 }
 
 bool BlogPageBuilder::isOptionEnabled(int flag)
+{
+    return (options & flag) == flag;
+}
+
+bool NavBarGenerator::isOptionEnabled(int flag)
 {
     return (options & flag) == flag;
 }

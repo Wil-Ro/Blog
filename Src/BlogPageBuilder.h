@@ -5,6 +5,7 @@
 #include <sstream>
 #include <vector>
 #include <filesystem>
+#include <set>
 
 #include "BlogParser.h"
 #include "Page.h"
@@ -14,15 +15,30 @@
  * along with an optional articleIdentifier. The template is searched for this
  * and the blog is placed after it.
  */
-
-class BlogPageBuilder
-{
-public:
-    enum OptionFlags
+enum OptionFlags
     {
         NONE = 0X0,
         HIDE_PRIVATE = 0x1
     };
+
+class NavBarGenerator
+{
+private:
+    std::string navHeader = "\n<h1>Navigation</h1>\n\n";
+    int options;
+
+    std::string generateCategories(std::string rootFolderUrl);
+    std::string insertPagesIntoCategories(std::string categories, std::vector<Page*> pages);
+    std::string findDeepestCategory(std::string url);
+
+    bool isOptionEnabled(int flag);
+
+public:
+    std::string generateNavSection(std::vector<Page*> pages, int options);
+};
+
+class BlogPageBuilder
+{
 private:
     int options;
 
@@ -41,14 +57,6 @@ private:
     std::string readFile(std::string fileUrl);
     int calculateIdentifierLocation(std::string id, std::string text);
     void collectPages();
-
-    // TODO separate these into a separate object
-    std::string navHeader = "\n<h1>Navigation</h1>\n\n";
-
-    std::string generateNavSection();
-    std::string generateCategories(std::string rootFolderUrl);
-    std::string insertPagesIntoCategories(std::string categories);
-    std::string findDeepestCategory(std::string url);
 
     void createPage(Page* page);
     bool isOptionEnabled(int flag);

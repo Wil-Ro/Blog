@@ -65,9 +65,9 @@ int main(int argc, char* argv[])
     std::string output = getArgValue(argc, argv, "-out=");
         if (output == "")
             output = OUTPUT_FILE_FOLDER;
-    int flags = BlogPageBuilder::OptionFlags::NONE;
+    int flags = OptionFlags::NONE;
     if (doesArgExist(argc, argv, "-hide"))
-        flags |= BlogPageBuilder::OptionFlags::HIDE_PRIVATE;
+        flags |= OptionFlags::HIDE_PRIVATE;
 
     // generated pages
     BlogPageBuilder* builder = new BlogPageBuilder(RESOURCE_FOLDER "/Templates/BlogPageTemplate.html", source, output, flags);
