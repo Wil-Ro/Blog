@@ -1,6 +1,6 @@
 # Blog
 A rebuild of my website with a C++ backend.
-Currently using [md4c](https://github.com/mity/md4c) for parsing and [oat++](https://oatpp.io/) for web backend.
+Currently using [md4c](https://github.com/mity/md4c) for parsing and [lighttpd](https://www.lighttpd.net/) for web backend.
 
 I've mostly been using this as a chance to explore my thoughts on low-level-ish, low power code. 
 Because of this I've been trying to use the simplest fastest libraries I can find and create a 
