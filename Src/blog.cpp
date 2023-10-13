@@ -55,6 +55,7 @@ void copyFolderAndContents(std::string inUrl, std::string outUrl)
 /*
  * -in=""  // give source folder
  * -out="" // give output folder
+ * -static="" // give static resources folder (images and things to copy across to output folder go in here)
  * -hide // hides private posts
  */
 int main(int argc, char* argv[])
@@ -63,8 +64,12 @@ int main(int argc, char* argv[])
     if (source == "")
         source = SOURCE_FILE_FOLDER;
     std::string output = getArgValue(argc, argv, "-out=");
-        if (output == "")
-            output = OUTPUT_FILE_FOLDER;
+    if (output == "")
+        output = OUTPUT_FILE_FOLDER;
+    std::string stat = getArgValue(argc, argv, "-static=");
+    if (stat == "")
+        stat = STATIC_RESOURCES_FOLDER;
+
     int flags = OptionFlags::NONE;
     if (doesArgExist(argc, argv, "-hide"))
         flags |= OptionFlags::HIDE_PRIVATE;
@@ -74,7 +79,7 @@ int main(int argc, char* argv[])
     builder->buildAllPages();
 
     // pre-written pages and resources i.e. images
-    copyFolderAndContents(STATIC_RESOURCES_FOLDER, output);
+    copyFolderAndContents(stat, output);
 
 }
 

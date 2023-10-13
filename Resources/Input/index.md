@@ -16,9 +16,9 @@ On the side of this I also enjoy using code to create music through programming 
 I've previously had interests in VR and XR and UI design, spending a lot of my secondary school years experimenting with both concepts so both websites also have a few probjects relating to those concepts.
 ________
 If you want a basic outline of my work, here are a few interesting projects:
-- [something]()
-- [something]()
-- [something]()
+- [My Work at Skipton Building Society](/SBSWork.html)
+- [My Work running AberCompSoc](/aberComSoc.html)
+- [AardvarkXR](/Aardvark.html)
 
 To see all of my work, check the navbox to the side.
 

@@ -129,6 +129,9 @@ FileFlags FlagReader::readFlags(std::string flagString)
             case 'p':
                 flags.hidden = true;
                 break;
+            case 'P':
+                flags.alwaysHidden = true;
+                break;
         }
     }
 

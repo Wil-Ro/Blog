@@ -105,6 +105,8 @@ std::string NavBarGenerator::insertPagesIntoCategories(std::string categories, s
 {
     for (Page* page : pages)
     {
+        if (page->getPageFlags().alwaysHidden)
+            continue;
         if (page->getPageFlags().hidden &&
             isOptionEnabled(OptionFlags::HIDE_PRIVATE))
             continue;
