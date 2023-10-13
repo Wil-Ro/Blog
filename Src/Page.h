@@ -50,7 +50,6 @@ public:
     std::string getSourceFileContents();
 
     std::string getInUrl();
-    std::string getRelativeInUrl();
 
     std::string getOutUrl();
     std::string getRelativeOutUrl();

@@ -96,9 +96,7 @@ std::string NavBarGenerator::findDeepestCategory(std::string url)
 {
     int categoryEnd = url.rfind("/");
     int categoryStart = url.rfind("/", categoryEnd-1);
-    if (categoryStart == -1)
-        categoryStart = 0;
-    return url.substr(categoryStart, categoryEnd);
+    return url.substr(categoryStart+1, categoryEnd-categoryStart-1);
 }
 
 std::string NavBarGenerator::insertPagesIntoCategories(std::string categories, std::vector<Page*> pages)
@@ -117,7 +115,7 @@ std::string NavBarGenerator::insertPagesIntoCategories(std::string categories, s
         + "</a></li>\n");
 
         std::string categoryOpening = "\n";
-        int categoryStart = categories.find(findDeepestCategory(page->getRelativeInUrl()));
+        int categoryStart = categories.find(findDeepestCategory(page->getInUrl()));
         int insertLocation = 0;
         if (categoryStart != -1)
             insertLocation = categories.find(categoryOpening, categoryStart) + categoryOpening.length();

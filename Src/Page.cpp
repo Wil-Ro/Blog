@@ -59,15 +59,6 @@ std::string Page::getInUrl()
     return sourceFileUrl;
 }
 
-// includes first /
-std::string Page::getRelativeInUrl()
-{
-    int start = strlen(SOURCE_FILE_FOLDER)+1;
-    std::string relativeUrl = std::string(sourceFileUrl).substr(start, sourceFileUrl.length()-start);
-    relativeUrl.replace(relativeUrl.length()-3, 3, ".html");
-    return relativeUrl;
-}
-
 FileFlags Page::getPageFlags()
 {
     return flags;
