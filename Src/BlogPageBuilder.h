@@ -34,7 +34,7 @@ private:
     bool isOptionEnabled(int flag);
 
 public:
-    std::string generateNavSection(std::vector<Page*> pages, int options);
+    std::string generateNavSection(std::vector<Page*> pages, std::string sourceFolderUrl, int options);
 };
 
 class BlogPageBuilder

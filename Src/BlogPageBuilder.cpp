@@ -16,7 +16,7 @@ BlogPageBuilder::BlogPageBuilder(std::string templateFileUrl, std::string inFold
     collectPages();
 
     NavBarGenerator* navGen = new NavBarGenerator();
-    navSection = navGen->generateNavSection(pages, options);
+    navSection = navGen->generateNavSection(pages, inFolder, options);
     delete navGen;
 }
 
@@ -129,12 +129,12 @@ std::string NavBarGenerator::insertPagesIntoCategories(std::string categories, s
     return categories;
 }
 
-std::string NavBarGenerator::generateNavSection(std::vector<Page*> pages, int options)
+std::string NavBarGenerator::generateNavSection(std::vector<Page*> pages, std::string sourceFolderUrl,  int options)
 {
     this->options = options;
     std::string buffer;
     buffer.append(navHeader);
-    buffer.append(generateCategories(SOURCE_FILE_FOLDER));
+    buffer.append(generateCategories(sourceFolderUrl));
     buffer = insertPagesIntoCategories(buffer, pages);
     return buffer;
 }
