@@ -49,7 +49,7 @@ std::string Page::getOutUrl()
 std::string Page::getRelativeOutUrl()
 {
     int start = sourceFileUrl.find_last_of("/");
-    std::string relativeUrl = std::string(sourceFileUrl).substr(start, sourceFileUrl.length()-start);
+    std::string relativeUrl = std::string(sourceFileUrl).substr(start+1, sourceFileUrl.length()-start);
     relativeUrl.replace(relativeUrl.length()-3, 3, ".html");
     return relativeUrl;
 }
