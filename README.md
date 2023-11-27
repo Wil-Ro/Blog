@@ -12,3 +12,7 @@ Pages can take some small settings and properties on their first line in the for
 I'm really proud of this, its not clean but I feel like its a project I set myself a spec for and stuck really well to.
 
 Find the site at [www.rosia.me](https://rosia.me) and a blog post about its creation [here](https://www.rosia.me/ThisSite.html)
+
+
+## TODO
+- new idea, add a setting to specify title of the page (title being the text in the tab of a browser)
