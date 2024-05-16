@@ -1,7 +1,9 @@
 <html>
     <head>
+    <link id="colors" rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="effects.css">
     <link rel="stylesheet" href="Wireframe.css">
+    <script src="colorThemes.js"></script>
     <title>Rosia Evans Homepage and Blog</Title>
     <link rel="icon" href="willow.ico" type="image/x-icon"/>
     </head>
@@ -22,6 +24,14 @@
             <div class="contacts">
                 <a href="https://github.com/Wil-Ro">Github</a>
                 <a href="CV.pdf">CV</a>
+            </div>
+            
+            <h2 id="contactsHeader"> Page Settings: </h2>
+            <div>
+                <select id="pageColor" onchange="updateColor()">
+                <option value="lightColors.css">Light</option>
+                <option value="darkColors.css">Dark/Low Contrast</option>
+                </select>
             </div>
             </nav>
             <article>

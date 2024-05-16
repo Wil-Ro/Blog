@@ -1,7 +1,11 @@
 <html>
     <head>
-    <link rel="stylesheet" href="Wireframe.css">
+    <link id="colors" rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="effects.css">
+    <link rel="stylesheet" href="Wireframe.css">
+    <script src="colorThemes.js"></script>
+    <title>Rosia Evans Homepage and Blog</Title>
+    <link rel="icon" href="willow.ico" type="image/x-icon"/>
     </head>
     <body>
         <header>
@@ -15,59 +19,104 @@
 
 <li><a href=/index.html>Welcome!</a></li>
 
-<h2>Newer Work</h2>
-<li><a href=/CNCMachine.html>CNSelfie</a></li>
+<h2>Major Work</h2>
+<li><a href=/Aardvark.html>AardvarkXR</a></li>
 <li><a href=/ThisSite.html>This Site</a></li>
+<li><a href=/PlantCareV2.html>Plant System Work Gallery</a></li>
+<li><a href=/Laptop.html>Self-built Laptop</a></li>
+
+
+<h2>Minor Work</h2>
+<li><a href=/CNCMachine.html>CNSelfie</a></li>
+<li><a href=/Uno.html>SDL Uno</a></li>
+<li><a href=/PlantSystem.html>Plant Watering System</a></li>
+<li><a href=/SonicPiWork.html>Sonic-Pi and Algorave</a></li>
 
 
 <h2>Older Work</h2>
 <li><a href=/MindMap.html>Mind Map Maker</a></li>
-<li><a href=/Aardvark.html>AardvarkXR</a></li>
 <li><a href=/EPQProject.html>EPQ Project</a></li>
-<li><a href=/CatTowerDefence.html>Tower defence game</a></li>
 
 
-<h2>Thoughts And Essays</h2>
-<li><a href=/permacomputing.html>Permacomputing</a></li>
+<h2>Thoughts and Essays</h2>
+<li><a href=/Permacomputing.html>Permacomputing</a></li>
+<li><a href=/Livecoding.html>Live-Coding</a></li>
 
 
 <h2>University</h2>
-<li><a href=/aberCompSoc.html>aberCompSoc</a></li>
-<li><a href=/RoboticsSociety.html>Aber Robotics Soc</a></li>
-<li><a href=/SailBot.html>aberSailBot</a></li>
+<li><a href=/aberCompSoc.html>AberCompSoc</a></li>
+<li><a href=/RoboticsSociety.html>AberRoboticsSoc</a></li>
+<li><a href=/SailBot.html>AberSailBot</a></li>
+
+
+<h2>Useful Notes</h2>
+<li><a href=/UnderstandingWavesharesEinkDrivers.html>Understanding Waveshare's E-Paper C Drivers</a></li>
 
 
 <h2>Work Experience</h2>
-<li><a href=/SBSWork.html>SBS Internship</a></li>
+<li><a href=/SBSWork.html>Skipton Building Society Internship</a></li>
 
 
+            <h2 id="contactsHeader"> Contact Me: </h2>
+            <div class="contacts">
+                <a href="mailto:rosiaeevans@gmail.com">Email</a>
+                <a href="https://fosstodon.org/@Wi__Ro" rel="me">Mastodon</a>
+            </div>
+            <h2 id="contactsHeader"> My Work: </h2>
+            <div class="contacts">
+                <a href="https://github.com/Wil-Ro">Github</a>
+                <a href="CV.pdf">CV</a>
+            </div>
+            
+            <h2 id="contactsHeader"> Page Settings: </h2>
+            <div>
+                <select id="pageColor" onchange="updateColor()">
+                <option value="lightColors.css">Light</option>
+                <option value="darkColors.css">Dark/Low Contrast</option>
+                </select>
+            </div>
             </nav>
             <article><h1>AardvarkXR</h1>
-<h2>What it is</h2>
-<p>Aardvark is a development framework, currently in alpha, designed to allow users to open small apps (known as gadgets) over the top of virtual reality programs or games. You could think of it as a mobile phone for use within
-any vr software, its main focus is providing small utilities such as calculators or note taking apps. Developers can create apps for Aardvark using web code which it then renders over the users view, these renders can be 2D
-or 3D which is a rather big positive as steamVR doesnt support 3D rendering on overlays so Aardvark has to do this itself. Due to all the code being webbased and run on servers, all gadgets are innately multi-user (with a small amount
-of work from the developer) and when in social vr apps, people can open gadgets that will be seen by all other users within that program.</p>
-<p>I was first introduced to Aardvark through a hackathon the developers ran on its inital release to the public in an attempt to gain developers to create basic apps for it, and since then I have periodically revisited it
-when ideas for gadgets come to mind. When taking part in the first hackathon I had little to no experience with javascript or html, let alone typescript (the main language used for Aardvark development), so I was required
-to teach myself over the course of the 3 days the hackathon ran for.</p>
+<h2>Overview</h2>
+<p>Aardvark was an open-source virtual reality project I joined and worked on for around 2 years between 2019 and 2021. I started out writing small add-ons for it and eventually ended up working with the main developer on creating core parts of the system.</p>
+<h2>What is AardvarkXR?</h2>
+<p><a href="https://github.com/aardvarkxr/aardvark">Aardvark</a> is a framework that allows users to open small apps (known as gadgets) over the top of other virtual reality programs. Its program agnostic so runs in any other app. You could think of it as a mobile phone for use within other VR applications. Its main focus is providing small utilities such as calculators or note taking apps. Developers can create apps for Aardvark using web code (React and Typescript) which it then renders over the users view. These renders can be 3D which is a big positive as most core VR systems don't support 3D rendering on overlays so Aardvark does this itself.</p>
+<p>Due to all the code being web-based and run on servers, all gadgets are innately multi-user (with a small amount of work from the developer) and when in social VR apps, people can open gadgets that will be seen by all other users within that program using Aardvark.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pux6RbySUMU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h2>What I did</h2>
-<p>During the first hackathon I proposed and worked on an audio visualiser tool that would run in the background of the users environment as they worked, reacting to their desktop audio. I also designed and created 3D models for other
-developers programs, such as icons for a playing card app; one of the first apps to be published on the platform.</p>
-<p>Around 4 months later I revisited Aardvark to create a photo viewing app which was originally a personal project but became a team effort with another member of the community who offered
-to join development, the app allowed users to upload images which were stored using ipfs (a decentralized storage system) and had multi-user functionality allowing different people to show each other photos. The main idea of the program was to allow vr artists to
-open reference images within their prospective drawing apps.</p>
+<h2>My Work</h2>
+<p>I was first introduced to Aardvark through a hackathon the developers ran on its initial release. When taking part in this I had no experience with typescript or web development in general, so I was required to teach myself over the course of the 3 days.</p>
+<p>I worked on an audio visualiser tool that ran in the background of users environments and also helped other developers, designing and creating 3D models for their work. One example of this was a set of icons I modelled for a playing card app (one of the first apps to be published on the platform).</p>
+<hr>
+<p>Around 4 months later I was working on some 3D art in VR and realised it would be really useful to be able to bring reference images into my VR space. I remembered Aardvark and revisited it to create a photo viewing app. This was originally a personal project but became a team effort with another member of the community who offered to join development.</p>
+<p>The app allowed users to upload images which were stored using <a href="https://en.wikipedia.org/wiki/InterPlanetary_File_System">ipfs</a> and had multi-user functionality allowing different people to show each other photos.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/E3gw_GXHH1s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>As well as this I have also worked on the base code of the project itself. Originally Aardvark had the user open its Ui through a button on their hand which took up valuable visual space used by alot of other programs.
-I was tasked with creating a more intuitive solution which ended up being a gesture based system. With little to no guidance I had to read and gain a full understanding of the projects mid-level inner workings and
-rewrite large sections of it. After a week or so I produced a gesture system that allowed the user to bump the ends of their controllers together to open and close the menu. I also created a developer tool to allow
-developers to tweak the gesture to ensure it worked for their specific controllers.</p>
+<p>After this I, found I was enjoying working with Aardvark and after talking to the main developer ended up working on the base code of the project itself.</p>
+<p>Originally Aardvark had the user open its UI through a button on their hand which took up valuable visual space used by a lot of other programs.</p>
+<p>I was tasked with creating a more intuitive solution which ended up being a gesture based system. With little to no guidance I had to read and gain a full understanding of the projects mid-level inner workings and
+rewrite large sections of it. After a week or so I produced a gesture system that allowed the user to bump the ends of their controllers together to open and close the menu. I also created a developer tool to allow developers to tweak the gesture to ensure it worked for their specific controllers.</p>
+<div style="display:flex; gap: 10px;">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9uG2HSavA1U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FzQcE9UeOao" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<h2>Looking Back</h2>
+<p>Aardvark slowly fizzled out as it went on, never gaining much traction from developers sadly. Although it did become somewhat known in the VR space for a while. The main developer moved on to other projects and after that it fell quiet. Although I'm less invested in VR development nowadays looking back I still feel like it had a lot of potential and I'm somewhat sad it didn't take off. I still use it when working on 3D models in VR but past that it doesn't see regular use.</p>
+<p>Aardvark was my first open-source project and I feel that I learnt a lot from it. It helped me learn to prioritise what I did and didn't create pull requests for and ask for help around, showing me how valuable the main developers time was. In terms of project management it taught me a lot around prioritising my work and my communications when in busy, high stress teams.</p>
 
             </article>
         </main>
-        <div>
+        <div class="webring">
+        <h2> Webrings </h2>
+            <div class="webringContent">
+                <a href="https://users.aber.ac.uk/evh14"><-</a>
+                <a href="https://fediring.net/"> aber_webring </a>
+                <a href="https://dannylarge144.github.io">-></a>
+            </div>
+
+            <div class="webringContent">
+                <a href="https://fediring.net/previous?host=rosia.me"><-</a>
+                <a href="https://fediring.net/"> fediring </a>
+                <a href="https://fediring.net/next?host=rosia.me">-></a>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,7 +1,11 @@
 <html>
     <head>
-    <link rel="stylesheet" href="Wireframe.css">
+    <link id="colors" rel="stylesheet" href="colors.css">
     <link rel="stylesheet" href="effects.css">
+    <link rel="stylesheet" href="Wireframe.css">
+    <script src="colorThemes.js"></script>
+    <title>Rosia Evans Homepage and Blog</Title>
+    <link rel="icon" href="willow.ico" type="image/x-icon"/>
     </head>
     <body>
         <header>
@@ -15,34 +19,67 @@
 
 <li><a href=/index.html>Welcome!</a></li>
 
-<h2>Newer Work</h2>
-<li><a href=/CNCMachine.html>CNSelfie</a></li>
+<h2>Major Work</h2>
+<li><a href=/Aardvark.html>AardvarkXR</a></li>
 <li><a href=/ThisSite.html>This Site</a></li>
+<li><a href=/PlantCareV2.html>Plant System Work Gallery</a></li>
+<li><a href=/Laptop.html>Self-built Laptop</a></li>
+
+
+<h2>Minor Work</h2>
+<li><a href=/CNCMachine.html>CNSelfie</a></li>
+<li><a href=/Uno.html>SDL Uno</a></li>
+<li><a href=/PlantSystem.html>Plant Watering System</a></li>
+<li><a href=/SonicPiWork.html>Sonic-Pi and Algorave</a></li>
 
 
 <h2>Older Work</h2>
 <li><a href=/MindMap.html>Mind Map Maker</a></li>
-<li><a href=/Aardvark.html>AardvarkXR</a></li>
 <li><a href=/EPQProject.html>EPQ Project</a></li>
-<li><a href=/CatTowerDefence.html>Tower defence game</a></li>
 
 
-<h2>Thoughts And Essays</h2>
-<li><a href=/permacomputing.html>Permacomputing</a></li>
+<h2>Thoughts and Essays</h2>
+<li><a href=/Permacomputing.html>Permacomputing</a></li>
+<li><a href=/Livecoding.html>Live-Coding</a></li>
 
 
 <h2>University</h2>
-<li><a href=/aberCompSoc.html>aberCompSoc</a></li>
-<li><a href=/RoboticsSociety.html>Aber Robotics Soc</a></li>
-<li><a href=/SailBot.html>aberSailBot</a></li>
+<li><a href=/aberCompSoc.html>AberCompSoc</a></li>
+<li><a href=/RoboticsSociety.html>AberRoboticsSoc</a></li>
+<li><a href=/SailBot.html>AberSailBot</a></li>
+
+
+<h2>Useful Notes</h2>
+<li><a href=/UnderstandingWavesharesEinkDrivers.html>Understanding Waveshare's E-Paper C Drivers</a></li>
 
 
 <h2>Work Experience</h2>
-<li><a href=/SBSWork.html>SBS Internship</a></li>
+<li><a href=/SBSWork.html>Skipton Building Society Internship</a></li>
 
 
+            <h2 id="contactsHeader"> Contact Me: </h2>
+            <div class="contacts">
+                <a href="mailto:rosiaeevans@gmail.com">Email</a>
+                <a href="https://fosstodon.org/@Wi__Ro" rel="me">Mastodon</a>
+            </div>
+            <h2 id="contactsHeader"> My Work: </h2>
+            <div class="contacts">
+                <a href="https://github.com/Wil-Ro">Github</a>
+                <a href="CV.pdf">CV</a>
+            </div>
+            
+            <h2 id="contactsHeader"> Page Settings: </h2>
+            <div>
+                <select id="pageColor" onchange="updateColor()">
+                <option value="lightColors.css">Light</option>
+                <option value="darkColors.css">Dark/Low Contrast</option>
+                </select>
+            </div>
             </nav>
             <article><h1>EPQ Project</h1>
+<blockquote>
+<p>This is an older post from my first personal website I created in secondary school, its yet to be re-written for this new website so expect varying degrees of quality</p>
+</blockquote>
 <h2>What it is</h2>
 <p>This project was completed for my Extended Project Equalification (also known as EPQ). During the EPQ, a student will pick a subject of their choice, research it and then either write a paper or create a piece of media
 (an &quot;artefact&quot;) based on what they have learnt. For my subject I originally chose physics simulation as at the time I lacked confidence in maths and wanted to force myself to relearn and become more comfortable with it.
@@ -57,6 +94,19 @@ very basic physics engine built in C++.</p>
 
             </article>
         </main>
-        <div>
+        <div class="webring">
+        <h2> Webrings </h2>
+            <div class="webringContent">
+                <a href="https://users.aber.ac.uk/evh14"><-</a>
+                <a href="https://fediring.net/"> aber_webring </a>
+                <a href="https://dannylarge144.github.io">-></a>
+            </div>
+
+            <div class="webringContent">
+                <a href="https://fediring.net/previous?host=rosia.me"><-</a>
+                <a href="https://fediring.net/"> fediring </a>
+                <a href="https://fediring.net/next?host=rosia.me">-></a>
+            </div>
+        </div>
     </body>
 </html>

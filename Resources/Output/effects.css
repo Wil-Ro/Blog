@@ -1,10 +1,39 @@
 a{
     text-decoration: underline;
-    color: black;
+    color: var(--text);
 }
 a:visted{
     color: black
 }
 a:hover{
     font-weight: 600;
+    background-color: var(--accent);
+    color: var(--back);
+    padding: 1px;
+}
+
+
+::selection {
+    background-color: var(--accent);
+    color: var(--back);
+}
+
+::-moz-selection {
+    background-color: var(--accent);
+    color: var(--back);
+}
+
+::-o-selection {
+    background-color: var(--accent);
+    color: var(--back);
+}
+
+::-ms-selection {
+    background-color: var(--accent);
+    color: var(--back);
+}
+
+::-webkit-selection {
+    background-color: var(--accent);
+    color: var(--back);
 }

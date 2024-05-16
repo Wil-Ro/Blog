@@ -1,5 +1,20 @@
+body{
+    background-color: var(--back);
+    color: var(--text);
+
+    font-family: 'Courier New';
+    transition: background-color 0.5s, color 0.5s;
+}
+a{
+    color: var(--text);
+}
+
 h1{
-    color: black;
+    font-size: 1.7rem;
+}
+
+h2{
+    font-size: 1.5rem;
 }
 
 header{
@@ -9,11 +24,24 @@ header{
 
 main{
     display: flex;
+    /*border-top: var(--text) dashed 3px;*/
+}
+
+article{
+    width: 60rem;
+    padding: 0 30px 0 30px;
+
 }
 
 nav{
-    margin-right: 5%;
-    width: 10%;
+    width: 12%;
+
+    /*border-right: var(--text) dashed 3px;*/
+
+    padding: 10px;
+    
+    overflow: clip;
+
 }
 
 nav h1{
@@ -22,15 +50,16 @@ nav h1{
 
 nav h2{
     font-size: 1rem;
-    margin-bottom: 0;
+    margin-bottom: 0; /*overwriting default h2 thing*/
 }
 
-article{
-    width: 40rem;
-}
 
 ul{
     list-style-type: "- ";
+}
+
+article li{
+    margin-bottom: 5px;
 }
 
 pre
@@ -40,7 +69,88 @@ pre
     overflow: auto;
 }
 
+blockquote{
+    background-color: lightgray;
+    padding: 3px;
+    margin: 0;
+}
+blockquote p{
+ margin: 0;
+}
+
 img{
-    width: 100%;
+    width: 40%;
     margin-top: 10px;
+}
+
+.contacts{
+    display: flex;
+    gap: 5px;
+    
+    flex-wrap: wrap;
+}
+
+#contactsHeader{
+    margin-top: 30px;
+}
+
+
+.webring{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    margin: 5px;
+}
+
+.webring h2{
+    background-color: var(--back);
+    
+    font-size: 1rem;
+    margin: 0;
+}
+
+.webringContent{
+    background-color: var(--back);
+
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+
+
+
+@media (only screen and orientation: portrait) {
+body, h1, h2{
+    font-size: 2rem;
+}
+nav, nav h1, nav h2{
+    font-size: 1.5rem;
+}
+main{
+    flex-direction: column;
+}
+
+nav{
+    height: 20vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 300) {
+  body {
+    font-size: WHATTpx;
+  }
+}
+
 }
