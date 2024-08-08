@@ -13,8 +13,8 @@
 
 struct FileFlags
 {
-    bool hidden; // removes page from navbar when hidePages option is set
-    bool alwaysHidden; // page will never be added to navbar, good for files you want to keep but only link to
+    bool hidden = false; // removes page from navbar when hidePages option is set
+    bool alwaysHidden = false; // page will never be added to navbar, good for files you want to keep but only link to
 };
 
 class FlagReader
