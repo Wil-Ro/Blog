@@ -5,7 +5,7 @@
 #include <cstring>
 #include <filesystem>
 
-#include "BlogPageBuilder.h"
+#include "Program.h"
 
 
 std::string findAndReplace(std::string text, std::string find, std::string replace)
@@ -69,14 +69,16 @@ int main(int argc, char* argv[])
     std::string stat = getArgValue(argc, argv, "-static=");
     if (stat == "")
         stat = STATIC_RESOURCES_FOLDER;
+    std::string siteWebUrl = getArgValue(argc, argv, "-url=");
+    if (siteWebUrl == "")
+        siteWebUrl = SITE_WEB_URL;
 
     int flags = OptionFlags::NONE;
     if (doesArgExist(argc, argv, "-hide"))
         flags |= OptionFlags::HIDE_PRIVATE;
 
-    // generated pages
-    BlogPageBuilder* builder = new BlogPageBuilder(RESOURCE_FOLDER "/Templates/BlogPageTemplate.html", source, output, flags);
-    builder->buildAllPages();
+    Program* program = new Program(source, output, RESOURCE_FOLDER "/Templates/BlogPageTemplate.html", RESOURCE_FOLDER "/Templates/AtomFeedTemplate.xml", siteWebUrl, flags);
+    program->buildAll();
 
     // pre-written pages and resources i.e. images
     copyFolderAndContents(stat, output);

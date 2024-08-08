@@ -5,6 +5,8 @@
 #include <string>
 #include <cstring>
 #include <vector>
+#include <filesystem>
+#include <sys/stat.h>
 
 #include "MacroDefinitions.h"
 
@@ -48,9 +50,9 @@ public:
     Page(std::string sourceFileUrl, std::string outFolderUrl);
 
     std::string getSourceFileContents();
+    std::string getLastTimeEdited();
 
     std::string getInUrl();
-
     std::string getOutUrl();
     std::string getRelativeOutUrl();
 

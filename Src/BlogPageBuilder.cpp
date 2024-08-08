@@ -1,32 +1,22 @@
 #include "BlogPageBuilder.h"
 
 
-BlogPageBuilder::BlogPageBuilder(std::string templateFileUrl, std::string inFolder,
-                                 std::string outFolder, int flags, std::string articleIdentifier)
+BlogPageBuilder::BlogPageBuilder(std::string templateFileUrl, std::vector<Page*> pages, std::string inFolderUrl, int flags, std::string articleIdentifier)
 {
     options = flags;
-    this->outFolder = outFolder;
-    this->inFolder = inFolder;
     pageTemplate = readFile(templateFileUrl);
     this->articleIdentifier = articleIdentifier;
     navIdentifier = "<nav>";
 
-    parser = new BlogParser();
-
-    collectPages();
 
     NavBarGenerator* navGen = new NavBarGenerator();
-    navSection = navGen->generateNavSection(pages, inFolder, options);
+    navSection = navGen->generateNavSection(pages, inFolderUrl, options);
     delete navGen;
 }
 
-BlogPageBuilder::~BlogPageBuilder()
-{
-    for(Page* page : pages)
-        delete page;
-}
 
-void BlogPageBuilder::createPage(Page* page)
+
+std::string BlogPageBuilder::createPage(std::string articleHTML)
 {
     std::string buffer = pageTemplate;
 
@@ -34,19 +24,9 @@ void BlogPageBuilder::createPage(Page* page)
     buffer.insert(navLocation, navSection);
 
     int articleLocation = calculateIdentifierLocation(articleIdentifier, buffer);
-    std::string articleText = parser->parse(page->getSourceFileContents());
-    buffer.insert(articleLocation, articleText);
+    buffer.insert(articleLocation, articleHTML);
 
-    page->setOutFileContents(buffer);
-}
-
-void BlogPageBuilder::buildAllPages()
-{
-    for(Page* page : pages)
-    {
-        createPage(page);
-        page->writePageToFile();
-    }
+    return buffer;
 }
 
 int BlogPageBuilder::calculateIdentifierLocation(std::string id, std::string text)
@@ -57,16 +37,26 @@ int BlogPageBuilder::calculateIdentifierLocation(std::string id, std::string tex
     return location;
 }
 
-void BlogPageBuilder::collectPages()
+std::string BlogPageBuilder::readFile(std::string fileUrl)
 {
-    auto directoryIterator = std::filesystem::recursive_directory_iterator(inFolder);
-    for(auto file : directoryIterator)
-    {
-        if (file.is_directory())
-            continue;
-        pages.push_back(new Page(file.path(), outFolder));
-    }
+    std::ifstream file(fileUrl);
+    std::stringstream fileCache;
+    fileCache << file.rdbuf();
+
+    return fileCache.str();
 }
+
+bool BlogPageBuilder::isOptionEnabled(int flag)
+{
+    return (options & flag) == flag;
+}
+
+bool NavBarGenerator::isOptionEnabled(int flag)
+{
+    return (options & flag) == flag;
+}
+
+
 
 std::string NavBarGenerator::generateCategories(std::string rootFolderUrl)
 {
@@ -137,23 +127,4 @@ std::string NavBarGenerator::generateNavSection(std::vector<Page*> pages, std::s
     buffer.append(generateCategories(sourceFolderUrl));
     buffer = insertPagesIntoCategories(buffer, pages);
     return buffer;
-}
-
-std::string BlogPageBuilder::readFile(std::string fileUrl)
-{
-    std::ifstream file(fileUrl);
-    std::stringstream fileCache;
-    fileCache << file.rdbuf();
-
-    return fileCache.str();
-}
-
-bool BlogPageBuilder::isOptionEnabled(int flag)
-{
-    return (options & flag) == flag;
-}
-
-bool NavBarGenerator::isOptionEnabled(int flag)
-{
-    return (options & flag) == flag;
 }

@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src",
+  "command": "/usr/bin/c++  -I/home/rosia/Programming/Cpp/BlogParser -g -std=gnu++20 -o CMakeFiles/BlogParser.dir/BlogParser.cpp.o -c /home/rosia/Programming/Cpp/BlogParser/Src/BlogParser.cpp",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/BlogParser.cpp"
+},
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src",
+  "command": "/usr/bin/c++  -I/home/rosia/Programming/Cpp/BlogParser -g -std=gnu++20 -o CMakeFiles/BlogPageBuilder.dir/BlogPageBuilder.cpp.o -c /home/rosia/Programming/Cpp/BlogParser/Src/BlogPageBuilder.cpp",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/BlogPageBuilder.cpp"
+},
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src",
+  "command": "/usr/bin/c++  -I/home/rosia/Programming/Cpp/BlogParser -g -std=gnu++20 -o CMakeFiles/BlogPageBuilder.dir/Page.cpp.o -c /home/rosia/Programming/Cpp/BlogParser/Src/Page.cpp",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/Page.cpp"
+},
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src",
+  "command": "/usr/bin/c++  -I/home/rosia/Programming/Cpp/BlogParser -g -std=gnu++20 -o CMakeFiles/AtomBuilder.dir/AtomBuilder.cpp.o -c /home/rosia/Programming/Cpp/BlogParser/Src/AtomBuilder.cpp",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/AtomBuilder.cpp"
+},
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src",
+  "command": "/usr/bin/c++  -I/home/rosia/Programming/Cpp/BlogParser -g -std=gnu++20 -o CMakeFiles/Program.dir/Program.cpp.o -c /home/rosia/Programming/Cpp/BlogParser/Src/Program.cpp",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/Program.cpp"
+},
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src",
+  "command": "/usr/bin/c++  -I/home/rosia/Programming/Cpp/BlogParser/Src/Src -I/home/rosia/Programming/Cpp/BlogParser -g -std=gnu++20 -o CMakeFiles/blog.dir/blog.cpp.o -c /home/rosia/Programming/Cpp/BlogParser/Src/blog.cpp",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/blog.cpp"
+},
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src/Libs",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/md4c.dir/md4c.c.o -c /home/rosia/Programming/Cpp/BlogParser/Src/Libs/md4c.c",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/Libs/md4c.c"
+},
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src/Libs",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/md4c-html.dir/md4c-html.c.o -c /home/rosia/Programming/Cpp/BlogParser/Src/Libs/md4c-html.c",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/Libs/md4c-html.c"
+},
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src/Libs",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/md4c-html.dir/entity.c.o -c /home/rosia/Programming/Cpp/BlogParser/Src/Libs/entity.c",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/Libs/entity.c"
+},
+{
+  "directory": "/home/rosia/Programming/Cpp/BlogParser/Src/Libs",
+  "command": "/usr/bin/cc   -g -o CMakeFiles/md4c-html.dir/md4c.c.o -c /home/rosia/Programming/Cpp/BlogParser/Src/Libs/md4c.c",
+  "file": "/home/rosia/Programming/Cpp/BlogParser/Src/Libs/md4c.c"
+}
+]

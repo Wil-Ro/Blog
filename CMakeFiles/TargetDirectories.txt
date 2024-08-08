@@ -1,0 +1,13 @@
+/home/rosia/Programming/Cpp/BlogParser/CMakeFiles/edit_cache.dir
+/home/rosia/Programming/Cpp/BlogParser/CMakeFiles/rebuild_cache.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/CMakeFiles/blog.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/CMakeFiles/BlogParser.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/CMakeFiles/BlogPageBuilder.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/CMakeFiles/AtomBuilder.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/CMakeFiles/Program.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/CMakeFiles/edit_cache.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/CMakeFiles/rebuild_cache.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/Libs/CMakeFiles/md4c.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/Libs/CMakeFiles/md4c-html.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/Libs/CMakeFiles/edit_cache.dir
+/home/rosia/Programming/Cpp/BlogParser/Src/Libs/CMakeFiles/rebuild_cache.dir

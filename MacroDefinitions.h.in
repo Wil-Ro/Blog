@@ -8,3 +8,5 @@
 
 #define STATIC_RESOURCES_FOLDER "${CMAKE_SOURCE_DIR}/Resources/Static"
 
+#define SITE_WEB_URL "https://rosia.me"
+

@@ -42,15 +42,9 @@ class BlogPageBuilder
 private:
     int options;
 
-    std::string outFolder;
-    std::string inFolder;
-
     std::string pageTemplate;
     std::string articleIdentifier;
     std::string navIdentifier;
-
-    std::vector<Page*> pages;
-    BlogParser* parser;
 
     std::string navSection;
 
@@ -58,15 +52,14 @@ private:
     int calculateIdentifierLocation(std::string id, std::string text);
     void collectPages();
 
-    void createPage(Page* page);
     bool isOptionEnabled(int flag);
 
 public:
 
-    BlogPageBuilder(std::string templateFileUrl, std::string inFolder, std::string outFolder,
-                    int flags, std::string articleIdentifier = "<article>");
+    BlogPageBuilder(std::string templateFileUrl, std::vector<Page*> pages, std::string inFolderUrl, int flags, std::string articleIdentifier = "<article>");
     ~BlogPageBuilder();
 
-    void buildAllPages();
+    std::string createPage(std::string articleHTML);
+
 
 };

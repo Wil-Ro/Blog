@@ -1,0 +1,2 @@
+/usr/bin/ar qc libAtomBuilder.a CMakeFiles/AtomBuilder.dir/AtomBuilder.cpp.o
+/usr/bin/ranlib libAtomBuilder.a

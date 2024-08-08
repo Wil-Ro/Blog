@@ -64,13 +64,13 @@ article li{
 
 pre
 {
-    background-color: lightgray;
+    background-color: var(--accentBack);
     padding: 3px;
     overflow: auto;
 }
 
 blockquote{
-    background-color: lightgray;
+    background-color: var(--accentBack);
     padding: 3px;
     margin: 0;
 }
@@ -81,6 +81,11 @@ blockquote p{
 img{
     width: 40%;
     margin-top: 10px;
+}
+
+nav hr{
+    margin-top: 30px;
+    border-top: solid 4px;
 }
 
 .contacts{
@@ -94,6 +99,18 @@ img{
     margin-top: 30px;
 }
 
+select {
+  border: none;
+  background: none;
+  color: var(--text);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+select:hover {
+   background-color: var(--accent);
+   color: var(--back);
+}
+
 
 .webring{
     position: fixed;
@@ -104,15 +121,11 @@ img{
 }
 
 .webring h2{
-    background-color: var(--back);
-    
     font-size: 1rem;
     margin: 0;
 }
 
 .webringContent{
-    background-color: var(--back);
-
     display: flex;
     gap: 5px;
     justify-content: space-between;

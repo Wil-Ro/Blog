@@ -35,6 +35,16 @@ Page::Page(std::string sourceFileUrl, std::string outFolderUrl)
     this->outFileUrl = outFolderUrl + getRelativeOutUrl();
 }
 
+std::string Page::getLastTimeEdited()
+{
+    struct stat attr;
+    stat(sourceFileUrl.c_str(), &attr);
+    char timeString[std::size("yyyy-mm-ddThh:mm:ssZ")];
+    std::strftime(std::data(timeString), std::size(timeString),
+                  "%FT%TZ", std::gmtime(&attr.st_mtime));
+    return timeString;
+}
+
 std::string Page::getSourceFileContents()
 {
     return sourceFileContents;

@@ -1,6 +1,7 @@
 a{
     text-decoration: underline;
     color: var(--text);
+    transition: background-color 0.5s, color 0.5s;
 }
 a:visted{
     color: black
