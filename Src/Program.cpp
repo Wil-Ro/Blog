@@ -40,10 +40,11 @@ void Program::buildAll()
         page->setOutFileContents(blogPageBuilder->createPage(articleHTML));
         page->writePageToFile();
 
-        atomBuilder->addHTMLEntry(articleHTML,
-                                  page->getPageTitle(),
-                                  siteWebUrl + page->getRelativeOutUrl(),
-                                  page->getLastTimeEdited());
+        if (!page->getPageFlags().alwaysHidden)
+            atomBuilder->addHTMLEntry(articleHTML,
+                                    page->getPageTitle(),
+                                    siteWebUrl + page->getRelativeOutUrl(),
+                                    page->getLastTimeEdited());
     }
 
     atomBuilder->writeToFile(outFolderUrl);
