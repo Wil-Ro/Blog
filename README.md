@@ -14,7 +14,7 @@ I'm really proud of this, its not clean but I feel like its a project I set myse
 Find the site at [www.rosia.me](https://rosia.me) and a blog post about its creation [here](https://www.rosia.me/ThisSite.html)
 
 
-## TODO
-- new idea, add a setting to specify title of the page (title being the text in the tab of a browser)
-- add the ability to cite in the markdown (md4c can take alterations like this)
-- add a "latest change" section to the front page
+## TODOs
+- [ ] add a "latest change" section to the front page
+- [ ] optional per page css overrides
+- [x] rss support
