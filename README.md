@@ -17,4 +17,6 @@ Find the site at [www.rosia.me](https://rosia.me) and a blog post about its crea
 ## TODOs
 - [ ] add a "latest change" section to the front page
 - [ ] optional per page css overrides
+- [ ] top-line parameters with values
+  - [ ] the ability to add a css class to the menu label of a page
 - [x] rss support
