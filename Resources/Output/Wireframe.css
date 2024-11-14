@@ -85,7 +85,7 @@ img{
 
 nav hr{
     margin-top: 30px;
-    border-top: solid 4px;
+    border-top: solid 1px var(--text);
 }
 
 .contacts{
@@ -115,7 +115,7 @@ select:hover {
 .webring{
     position: fixed;
     bottom: 0;
-    left: 0;
+    right: 0;
 
     margin: 5px;
 }
