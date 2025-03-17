@@ -13,6 +13,8 @@ I'm really proud of this, its not clean but I feel like its a project I set myse
 
 Find the site at [www.rosia.me](https://rosia.me) and a blog post about its creation [here](https://www.rosia.me/ThisSite.html)
 
+Also! if you want to use this program, find usage in usage.md! Drop me a message if you do use this program, Id love an excuse to clean it up a bit
+
 
 ## TODOs
 - [ ] add a "latest change" section to the front page
@@ -20,3 +22,4 @@ Find the site at [www.rosia.me](https://rosia.me) and a blog post about its crea
 - [ ] top-line parameters with values
   - [ ] the ability to add a css class to the menu label of a page
 - [x] rss support
+- [ ] the ability to set a html template through an argument
