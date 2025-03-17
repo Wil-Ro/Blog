@@ -51,7 +51,15 @@ templates you'll need to put them in ``Resources/Templates`` in the codebases re
 
 ## File settings
 Individual md files can have settings! The first line of any text file is for its settings, so __always leave the first line of a md file blank__.
-Settigs come in the form of single characters, at the moment the only two are:
+Settings come in the form of single characters, at the moment the only two are:
 - `P` to hide a page, this means it will still be hosted but wont be shown on the websites navbar. An of this would be [my quotes page](https://www.rosia.me/Quotes.html) 
 - `p` to make a page as hidable, this means its on the nav bar, but if you have an employer looking at your site soon, you can run the program with the `-hide` argument and it will hide all those pages till you regenerate them
+
+So an md file might look like this:
+
+```
+P
+# this is the title of a private file
+only people with the url to this can see it
+```
 
